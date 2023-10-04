@@ -1,18 +1,43 @@
 /* Barra de navegación */
-nav {
-    background-color: #444;
-    text-align: center;
-    padding: 10px 0;
-  }
-  
-  nav a {
-    color: #fff;
-    text-decoration: none;
-    margin: 0 20px;
-    transition: color 0.3s ease-in-out;
-  }
-  
-  nav a:hover {
-    color: #007bff;
-  }
-  
+.containar_nav {
+  display: flex;
+  flex-direction: row-reverse;
+
+  align-items: center;
+  background-color: var(--lightViolet);
+  text-align: center;
+
+  justify-content: space-between;
+
+  padding: 1rem 2rem 1rem 2rem;
+}
+.containar_nav >img{
+    height: 3rem;
+    border-radius: 20rem;
+
+}
+nav a {
+  font-weight: 900;
+  font-size: 1rem;
+  color: #fff;
+  text-decoration: none;
+  padding: .5rem;
+  transition: color 0.3s ease-in-out;
+}
+
+nav a:hover {
+  color: #007bff;
+}
+
+/* Estilos para el logo */
+.logo {
+  margin-left: 2rem; /* Espacio a la izquierda */
+  margin-right: 2rem; /* Espacio a la derecha */
+  color: #fff; /* Color del texto del logo */
+  font-weight: bold; /* Otras propiedades de estilo según sea necesario */
+}
+
+/* Estilos para el SearchBar (ajusta según sea necesario) */
+/* .search-bar {
+    Agrega estilos para el SearchBar aquí
+  } */

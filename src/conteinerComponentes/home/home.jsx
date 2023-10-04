@@ -16,24 +16,25 @@ function Home() {
   const [books, setBooks] = useState([]);
   const [cart, setCart] = useState([]);
   const [totalItems, setTotalItems] = useState(0);
-
+  const fetchBooks = async () => {
+    try {
+      const response = await fetch(VITE_API_URL);
+      const data = await response.json();
+      if (data.items) {
+        //función para tomar solamente las propiedades que queremos
+        const filterInfo = data.items.map((el) => getInfo(el));
+        return setBooks(filterInfo);
+      }
+    } catch (error) {
+      alert("Error al obtener libros", error);
+    }
+  };
   useEffect(() => {
     // Función para obtener la lista de libros de la API de Google Books
-    const fetchBooks = async () => {
-      try {
-        const response = await fetch(VITE_API_URL);
-        const data = await response.json();
-        if (data.items) {
-          //función para tomar solamente las propiedades que queremos
-          const filterInfo = data.items.map((el) => getInfo(el));
-          return setBooks(filterInfo);
-        }
-      } catch (error) {
-        alert("Error al obtener libros", error);
-      }
-    };
 
-    fetchBooks();
+    if (books.length === 0) {
+      fetchBooks();
+    }
   }, []); //carga solamente una vez al iniciar la página
 
   const addToCart = (book) => {
@@ -50,7 +51,6 @@ function Home() {
         </header>
         <section>
           <Nav />
-    
         </section>
         <div className="App">
           <BooksCard books={books} addToCart={addToCart} />
