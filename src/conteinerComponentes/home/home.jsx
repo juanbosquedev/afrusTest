@@ -1,4 +1,4 @@
-import { useState, useEffect } from "react";
+import { useState} from "react";
 import getInfo from "./functions/getInfo.js";
 
 import Cart from "../../presentacional/cart/cart.jsx";
@@ -29,13 +29,10 @@ function Home() {
       alert("Error al obtener libros", error);
     }
   };
-  useEffect(() => {
-    // Función para obtener la lista de libros de la API de Google Books
-
+ 
     if (books.length === 0) {
       fetchBooks();
     }
-  }, []); //carga solamente una vez al iniciar la página
 
   const addToCart = (book) => {
     const updatedCart = [...cart, book];
