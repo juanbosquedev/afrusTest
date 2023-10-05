@@ -5,6 +5,8 @@ Deployment site : https://library-jb.vercel.app/
 
 VITE_API_URL=https://www.googleapis.com/books/v1/volumes?q=javascript&key=AIzaSyCQFRrWIi4XNvJr7YEJztYjwDzqx8YBJIk
 
+git clone https://github.com/juanbosquedev/afrusTest.git
+
 npm install
 
 npm run dev
