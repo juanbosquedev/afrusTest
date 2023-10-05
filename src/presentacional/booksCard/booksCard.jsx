@@ -1,24 +1,40 @@
-import Style from "./booksCard.module.css"
+import Style from "./booksCard.module.css";
+import PropTypes from "prop-types";
 
-export default function booksCard ({books, addToCart}){
-    return (
-        <div className={Style.container}>
-        {books &&
-          books.map((book) => (
-            <div
-              key={book.id}
-              title={book.description}
-              className={Style.book}
-            >
+export default function BooksCard({ books, addToCart }) {
+  
+  return (
+    <div className={Style.book_container}>
+      {books &&
+        books.map((book) => (
+          <div key={book.id} >
+            <div className={Style.book_card}>
               <img src={book.img} alt={book.title} />
-              <h2>{book.title}</h2>
-              <p></p>
-              <button onClick={() => addToCart(book)}>
-                Agregar al carrito
-              </button>
+              <div className={Style.book_card_content}>
+                <h3>{book.title}</h3>
+                <p className={Style.text}>{book.description}</p>
+                <button
+                  className={Style.book_btn}
+                  onClick={() => addToCart(book)}
+                >
+                  Agregar al carrito
+                </button>
+              </div>
             </div>
-          ))}
-      </div>
-
-    )
+          </div>
+        ))}
+    </div>
+  );
 }
+
+BooksCard.propTypes = {
+  books: PropTypes.arrayOf(
+    PropTypes.shape({
+      id: PropTypes.number.isRequired,
+      img: PropTypes.string.isRequired,
+      title: PropTypes.string.isRequired,
+      description: PropTypes.string.isRequired,
+    })
+  ).isRequired,
+  addToCart: PropTypes.func.isRequired,
+};

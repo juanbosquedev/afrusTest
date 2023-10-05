@@ -7,9 +7,12 @@ function Cart({ cart, totalItems }) {
     <div className={Style.cart}>
       <h2>Carrito de Compras</h2>
       <p>Cantidad de Libros en el Carrito: {totalItems}</p>
-      <ul>
+      <ul className={Style.cart_conteiner}>
         {cart && cart.map((book) => (
-          <li key={book.id}>{book.title}</li>
+          <div key={book.id} className={Style.cart_card}>
+          <h6 >{book.title}</h6>
+          <img src={book.img}/>
+          </div>
         ))}
       </ul>
     </div>

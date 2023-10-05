@@ -2,17 +2,16 @@
 
 /* Calculadora de descuentos */
 .calculator {
-    background-color: #fff;
+    background-color: var(--bone);
     padding: 20px;
+    margin:1rem;
     border-radius: 5px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
-    margin-top: 20px;
+
     transition: transform 0.3s ease-in-out;
   }
   
-  .calculator:hover {
-    transform: scale(1.05);
-  }
+
   
   .calculator h1 {
     font-size: 24px;

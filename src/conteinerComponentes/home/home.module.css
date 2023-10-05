@@ -1,5 +1,6 @@
 /* Estilos generales */
 body {
+  position:relative;
   font-family: Arial, sans-serif;
   margin: 0;
   padding: 0;
@@ -15,7 +16,10 @@ header {
 }
 
 
-
+.home_accesories{
+  position:relative;
+  display:grid;
+grid-template-columns: repeat(2, 1fr);}
 
 .calculator {
   background-color:var(--bone);
@@ -51,5 +55,10 @@ button:hover {
   background-color: #0056b3;
 }
 
+@media only screen and (max-width: 600px) {
+.home_accesories{
+  grid-template-columns: repeat(1,1fr);
+}
+}
 
 

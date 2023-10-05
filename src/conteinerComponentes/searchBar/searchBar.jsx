@@ -1,10 +1,10 @@
-
+import Style from "./searchBar.module.css"
 export default function SearchBar() {
 
   
   return (
   
-    <form>
+    <form className={Style.search_form}>
       <input
         id="input"
         type="text"

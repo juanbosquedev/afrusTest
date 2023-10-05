@@ -6,7 +6,7 @@ import Discunt from "../discunt/disctun.jsx";
 import BooksCard from "../../presentacional/booksCard/booksCard.jsx";
 import Nav from "../../presentacional/nav/nav.jsx";
 
-import "./home.module.css";
+import Style from "./home.module.css";
 
 function Home() {
   //validaación de formulario, filtado, animaciones, paginado, favoritos
@@ -22,7 +22,7 @@ function Home() {
       const data = await response.json();
       if (data.items) {
         //función para tomar solamente las propiedades que queremos
-        const filterInfo = data.items.map((el) => getInfo(el));
+        const filterInfo = data.items.map((el) => getInfo(el, console.log(el)));
         return setBooks(filterInfo);
       }
     } catch (error) {
@@ -53,9 +53,12 @@ function Home() {
           <Nav />
         </section>
         <div className="App">
-          <BooksCard books={books} addToCart={addToCart} />
+          <div className={Style.home_accesories}>
+
           <Discunt />
           <Cart cart={cart} totalItems={totalItems} />
+          </div>
+          <BooksCard books={books}  addToCart={addToCart} />
         </div>
       </body>
     </>
