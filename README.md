@@ -1,6 +1,15 @@
 # 
 Test frontend afrus
 
+Deployment site : https://library-jb.vercel.app/
+
+VITE_API_URL=https://www.googleapis.com/books/v1/volumes?q=javascript&key=AIzaSyCQFRrWIi4XNvJr7YEJztYjwDzqx8YBJIk
+
+npm install
+
+npm run dev
+
+
 Para el presente test te invitamos a ejecutar una serie planteamientos que debes resolver siguiendo estas instrucciones:
 
 Se te presentarán 3 tareas que recomendamos realizar en orden ya que son dependientes entre ellas. Se agregó una tarea 4 a manera extra.
