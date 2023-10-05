@@ -11,7 +11,7 @@ import Style from "./home.module.css";
 function Home() {
   //validaación de formulario, filtado, animaciones, paginado, favoritos
 
-  const { VITE_API_URL } = import.meta.env;
+  const  VITE_API_URL = import.meta.env.VITE_API_URL;
 
   const [books, setBooks] = useState([]);
   const [cart, setCart] = useState([]);
