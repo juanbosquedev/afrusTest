@@ -31,7 +31,7 @@ export default function Discunt() {
             required
           />
         </div>
-        <div className={Style["input-group"]}>
+        <div className={Style['input-group']}>
           <label htmlFor="discountPercentage">Porcentaje de Descuento:</label>
           <input
             type="number"
@@ -43,7 +43,7 @@ export default function Discunt() {
         </div>
         <button onClick={calcularDescuento}>Calcular Descuento</button>
         {finalPrice !== null && (
-          <div id="result">Precio Final con Descuento: ${finalPrice}</div>
+          <div id="result" className={Style.result}>Precio Final con Descuento: ${finalPrice}</div>
         )}
       </div>
     </div>
