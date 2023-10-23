@@ -1,7 +1,7 @@
-function Component() {
-    return ( 
-        <div>hola</div>
-     );
-}
+import React from 'react'
 
-export default Component;
+export const Component = () => {
+  return (
+    <div>component</div>
+  )
+}
