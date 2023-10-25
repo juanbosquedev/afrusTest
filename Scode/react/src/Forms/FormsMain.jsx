@@ -1,29 +1,20 @@
-import { useState } from "react";
-
-
+import { useForm } from "./customHook/useForm";
 export const FormsMain = () => {
-  const [formState, setFormState] = useState({
-    user: "Juan Bosque",
-    email: "juan_bosque@hotmail.com",
-    password: 1234,
-  });
-
-  const { user, email, password } = formState;
-  const onInputChange = ({target}) => {
-    const {name, value} = target;
-    setFormState({
-      ...formState,
-     [name]:value
-    })
+  const initialForm = {
+    user: "",
+    email: "",
+    password: "",
   };
+
+  const { forms, onInputChange, onSubmit } = useForm(initialForm);
+  const { user, email, password } = forms;
+
+
   return (
     <div>
-      FromsMain
-      <p>
-        <h4>INGRESÁ TU VALOR</h4>
-        <input></input>
-      </p>
-      <form>
+      FormsMain
+     
+      <form onSubmit={onSubmit}>
         <div className="mb-3">
           <label htmlFor="user" className="form-label">
             User
@@ -32,6 +23,7 @@ export const FormsMain = () => {
             type="text"
             className="form-control"
             id="user"
+            name="user"
             placeholder="user"
             value={user}
             onChange={onInputChange}
@@ -45,6 +37,7 @@ export const FormsMain = () => {
             type="email"
             className="form-control"
             id="email"
+            name="email"
             placeholder="e-mail"
             value={email}
             onChange={onInputChange}
@@ -58,6 +51,7 @@ export const FormsMain = () => {
             type="password"
             className="form-control"
             id="password"
+            name="password"
             placeholder="password"
             value={password}
             onChange={onInputChange}

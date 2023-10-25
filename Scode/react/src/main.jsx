@@ -7,11 +7,13 @@ import ReactDOM from "react-dom/client";
 // import "./style.css";
 import "./index.css"
 // import { HooksApp } from "./Hooks/HooksMain";
-import { FormsMain } from "./Fomrs/FormsMain";
+// import { FormsMain } from "./Forms/FormsMain";
+import { FetchCustomHook } from "./fetchCustomHook/fetchCustomHook";
 
 ReactDOM.createRoot(document.getElementById("root")).render(
   <React.StrictMode>
-    <FormsMain/>
+    <FetchCustomHook/>
+    {/* <FormsMain/> */}
     {/* <HooksApp/> */}
     {/* <Component /> */}
     {/* <Fetch /> */}
