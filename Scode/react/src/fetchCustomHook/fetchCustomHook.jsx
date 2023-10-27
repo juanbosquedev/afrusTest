@@ -1,34 +1,39 @@
-
+import { useFetchData } from "./useFetch";
 export const FetchCustomHook = () => {
+  const { data, isLoading, errors } = useFetchData(
+    "https://jsonplaceholder.org/users"
+  );
   return (
-    <table className="table">
-    <thead>
-      <tr>
-        <th scope="col">#</th>
-        <th scope="col">First</th>
-        <th scope="col">Last</th>
-        <th scope="col">Handle</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <th scope="row">1</th>
-        <td>Mark</td>
-        <td>Otto</td>
-        <td>@mdo</td>
-      </tr>
-      <tr>
-        <th scope="row">2</th>
-        <td>Jacob</td>
-        <td>Thornton</td>
-        <td>@fat</td>
-      </tr>
-      <tr>
-        <th scope="row">3</th>
-        <td colSpan="2">Larry the Bird</td>
-        <td>@twitter</td>
-      </tr>
-    </tbody>
-  </table>
-  )
-}
+    <>
+      <h1>LISTA DE USUARIOAS</h1>
+      {isLoading ? (
+        <h4>cargando..</h4>
+      ) : errors ? (
+        <h4>a ocurrido un error: {errors}</h4>
+      ) : (
+        <table className="table">
+          <thead>
+            <tr>
+              <th scope="col">id</th>
+              <th scope="col">name</th>
+              <th scope="col">email</th>
+              <th scope="col">websit</th>
+            </tr>
+          </thead>
+          <tbody>
+            {data &&
+              data.map((user) => {
+                return(
+                <tr key={user.id}>
+                  <th scope="row">{user.id}</th>
+                  <td>{user.firstname}</td>
+                  <td>{user.email}</td>
+                  <td>{user.website}</td>
+                </tr>)
+              })}
+          </tbody>
+        </table>
+      )}
+    </>
+  );
+};
