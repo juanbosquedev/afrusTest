@@ -1,67 +1,82 @@
-
 import { useForm } from "./Forms/customHook/useForm";
+import { useReducer } from "react";
 const initialState = [
   {
-    id: 1,
+    id: new Date().getTime(),
     tarea: "Explicar Reducers",
     finalizada: false,
   },
 ];
 
-const nuevaTarea = {
-  id: 2,
-  tarea: "Explicar useReducer",
-  finalizada: false,
-};
-
 // const agregarTarea = {
-//   actyon: "[TAREA] Agregar Tarea", // SUELE SER UN STRING
+//   type: "[TAREA] Agregar Tarea", // SUELE SER UN STRING
 //   payload: nuevaTarea,
 // };
- 
+
+// const editarTarea = {
+//   type: "[TAREA] Editarar Tarea",
+//   payload: nuevaTarea,
+// };
+// const eliminarTarea = {
+//   type: "[TAREA] Eliminar Tarea",
+//   payload: nuevaTarea,
+// };
+// const borrarTarea = {
+//   type: "[TAREA] Borrar Tarea",
+//   payload: nuevaTarea,
+// };
 
 const tareaReducer = (state = initialState, action = {}) => {
   switch (action.type) {
     case "[TAREA] Agregar Tarea":
-        return [...state, action.payload]
+      return [...state, action.payload];
+
     case "[TAREA] Editar Tarea":
-        console.log('Editar')
-        // return [...state, action.payload]
+    //   console.log("Editar");
+    //   return [...state, action.payload]
 
     case "[TAREA] Eliminar Tarea":
-        console.log('Eliminar')
+    //   console.log('Eliminar')
 
-        // return [...state, action.payload]
+    // return [...state, action.payload]
 
     case "[TAREA] Borrar Tarea":
-        console.log('Borrar')
+      //   console.log('Borrar')
 
-        // return [...state, action.payload]
+      // return [...state, action.payload]
 
-      return[]
+      return [];
 
     default:
       break;
   }
+  return state;
   //   if (action.type === "[TAREA] Agregar Tarea") {
   //     return [...state, action.payload];
   //   }otra forma de hacerlo es con if
-  return state;
 };
 
-
-
 export const TaskList = () => {
-    const const [state, dispatch] = useReducer(tareaReducer=initialState)
-const {tarea, forms, onInputChange}=useForm({tarea:''})
- 
-const agregarTarea = (event)=>{
+  const [state, dispatch] = useReducer(tareaReducer, initialState);
+  const { tarea, forms, onInputChange } = useForm({ tarea: "" });
+
+  const agregarTarea = (event) => {
     event.preventDefault();
-    console.log(forms)
-    // type: "[TAREA] Agregar Tarea";
-    // payload: nuevaTarea;
+    if (forms.tarea === "") return;
+    const tarea = {
+      id: new Date().getTime(),
+      tarea: forms.tarea,
+      finalizada: false,
+    };
+    const action = {
+      type: "[TAREA] Agregar Tarea",
+      payload: tarea,
+    };
+
+    dispatch(action);
   };
-return (
+
+  return (
     <>
       <div>TaskList</div>
       <form onSubmit={agregarTarea}>
@@ -85,7 +100,16 @@ return (
         </button>
       </form>
 
-      <hr><ul></ul></hr>
+      <hr />
+      <ul>
+        {state.map((item) => {
+          return (
+          <li key={item.id} className="list-group">
+            {item.tarea}
+            {item.finalizada? '✅':'❌'}
+            </li>
+       ) })}
+      </ul>
     </>
   );
 };

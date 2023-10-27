@@ -10,13 +10,14 @@ export const useForm = (intialForm = {}) => {
       [name]: value,
     });
   };
-  const onSubmit = (e) => { 
-    e.preventDefault();
-    console.log(forms);
-  };
+  // const onSubmit = (e) => { 
+  //   e.preventDefault();
+  //   console.log(forms);
+  // };
   return {
+    ...forms,
     forms,
     onInputChange,
-    onSubmit
+    // onSubmit
   };
 };
