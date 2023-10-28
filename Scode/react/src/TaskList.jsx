@@ -27,25 +27,32 @@ const initialState = [
 // };
 
 const tareaReducer = (state = initialState, action = {}) => {
+  console.log(state);
   switch (action.type) {
     case "[TAREA] Agregar Tarea":
       return [...state, action.payload];
 
-    case "[TAREA] Editar Tarea":
-    //   console.log("Editar");
-    //   return [...state, action.payload]
+    case "[TAREA] Finalizar Tarea":
+      return state.map((tarea) => {
+        if (tarea.id === action.payload) {
+          return {
+            ...tarea,
+            finalizada: !tarea.finalizada,
+          };
+        }
+        return tarea;
+      });
+    case "[TAREA] Borrar Tarea":
+      return state.filter((tarea) => tarea.id !== action.payload);
 
-    case "[TAREA] Eliminar Tarea":
-    //   console.log('Eliminar')
+    case "[TAREA] Resetear Tarea":
+      return [];
+
+    //   console.log('Borrar')
 
     // return [...state, action.payload]
 
-    case "[TAREA] Borrar Tarea":
-      //   console.log('Borrar')
-
-      // return [...state, action.payload]
-
-      return [];
+    // return [];
 
     default:
       break;
@@ -76,6 +83,30 @@ export const TaskList = () => {
     dispatch(action);
   };
 
+  const finalizarTarea = ({ id }) => {
+    const action = {
+      type: "[TAREA] Finalizar Tarea",
+      payload: id,
+    };
+    dispatch(action);
+  };
+
+  const borrarTarea = ({ id }) => {
+    const action = {
+      type: "[TAREA] Borrar Tarea",
+      payload: id,
+    };
+    dispatch(action);
+  };
+
+  const resetTareas = () => {
+    const action = {
+      type: "[TAREA] Resetear Tarea",
+      payload:''
+    };
+    dispatch(action);
+  };
+
   return (
     <>
       <div>TaskList</div>
@@ -98,17 +129,39 @@ export const TaskList = () => {
         <button type="submit" className="btn btn-primary">
           Submit
         </button>
+        <button type='button' onClick={resetTareas} className="btn btn-danger">{/*el boton sino le ponemos type=button, por defecto es submit y presiona al formulzario */}
+          Reset
+        </button>
       </form>
 
       <hr />
-      <ul>
+      <ul className="list-group">
         {state.map((item) => {
           return (
-          <li key={item.id} className="list-group">
-            {item.tarea}
-            {item.finalizada? '✅':'❌'}
+            <li
+              key={item.id}
+              className="list-group-item d-flex justify-content-between"
+            >
+              <span>{item.tarea}</span>
+              <span>
+                <input
+                  type="checkbox"
+                  value={item.finalizada}
+                  onChange={() => finalizarTarea(item)}
+                />
+                {item.finalizada ? "✅" : "⛔"}
+                <button
+                  className="btn btn-danger"
+                  onClick={() => {
+                    borrarTarea(item);
+                  }}
+                >
+                  {"🗑"}
+                </button>
+              </span>
             </li>
-       ) })}
+          );
+        })}
       </ul>
     </>
   );
