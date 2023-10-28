@@ -2,6 +2,7 @@ import React from "react";
 import ReactDOM from "react-dom/client";
 import "./index.css"
 import { AppRoute } from "./AppRoute/AppRoute";
+import { BrowserRouter } from "react-router-dom";
 
 // import {Component }from "./formMain";
 // import { Fetch } from "./fetching/fetchMain";
@@ -15,7 +16,9 @@ import { AppRoute } from "./AppRoute/AppRoute";
 
 ReactDOM.createRoot(document.getElementById("root")).render(
   <React.StrictMode>
+    <BrowserRouter>
     <AppRoute/>
+    </BrowserRouter>
     {/* <TaskList/> */}
     {/* <HeavyCalcs/> */}
     {/* <FetchCustomHook/> */}
