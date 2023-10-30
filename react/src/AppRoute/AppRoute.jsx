@@ -5,6 +5,7 @@ import { Home } from "./Home";
 import { Contact } from "./Contact";
 import { About } from "./About";
 import { UsuarioProvider } from "../context/UsuarioProvider";
+import { Login } from "./Login";
 
 export const AppRoute = () => {
   return (
@@ -12,6 +13,7 @@ export const AppRoute = () => {
       <NavBar />
       <Routes>
         <Route path="/" element={<Home />}></Route>
+        <Route path="/Login" element={<Login />}></Route>
         <Route path="/contact" element={<Contact />}></Route>
         <Route path="/about" element={<About />}></Route>
         <Route path="/*" element={<Navigate to="/"></Navigate>}></Route>

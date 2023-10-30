@@ -20,6 +20,9 @@ export const NavBar = () => {
         <li className="nav-item">
           <NavLink to='/Contact'className="nav-link" >Contact</NavLink>
         </li>
+    <li className="nav-item">
+          <NavLink to='/Login'className="nav-link" >Log in</NavLink>
+        </li>
     
       </ul>
     </div>
