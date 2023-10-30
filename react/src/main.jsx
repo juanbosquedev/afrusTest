@@ -1,6 +1,6 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
-import "./index.css"
+import "./index.css";
 import { AppRoute } from "./AppRoute/AppRoute";
 import { BrowserRouter } from "react-router-dom";
 
@@ -13,18 +13,19 @@ import { BrowserRouter } from "react-router-dom";
 // import { HeavyCalcs } from "./HeavyCalcsUseMemo/HeavyCalcs";
 // import { FetchCustomHook } from "./fetchCustomHook/fetchCustomHook";
 // import { TaskList } from "./TaskList";
-
+//al userProvider se puede colocar en cualquier lado, ej debajo de StrictMode, debajo de BrowserRouter etc
 ReactDOM.createRoot(document.getElementById("root")).render(
   <React.StrictMode>
-    <BrowserRouter>
-    <AppRoute/>
+    <BrowserRouter> 
+      <AppRoute />       {/* provee información que la familia de componentes necesita que tenga hacia abajo */}
+
+      {/* <TaskList/> */}
+      {/* <HeavyCalcs/> */}
+      {/* <FetchCustomHook/> */}
+      {/* <FormsMain/> */}
+      {/* <HooksApp/> */}
+      {/* <Component /> */}
+      {/* <Fetch /> */}
     </BrowserRouter>
-    {/* <TaskList/> */}
-    {/* <HeavyCalcs/> */}
-    {/* <FetchCustomHook/> */}
-    {/* <FormsMain/> */}
-    {/* <HooksApp/> */}
-    {/* <Component /> */}
-    {/* <Fetch /> */}
   </React.StrictMode>
 );
