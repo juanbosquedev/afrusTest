@@ -1,6 +1,6 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
-import "./index.css";
+// import "./index.css";
 // import { AppRoute } from "./AppRoute/AppRoute";
 import { BrowserRouter } from "react-router-dom";
 import { MovieApp } from "./MovieApp/MovieApp";

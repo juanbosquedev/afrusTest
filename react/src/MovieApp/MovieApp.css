@@ -64,12 +64,12 @@ body {
     margin-bottom: 10px;
   }
   
-  .movie-card h2 {
+  .movie-card-title   {
     font-size: 18px;
     margin-bottom: 5px;
   }
   
-  .movie-card p {
+  .movie-card  p {
     margin-bottom: 5px;
   }
   
