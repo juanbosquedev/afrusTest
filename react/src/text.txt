@@ -1,0 +1,184 @@
+variables
+variable por fuera de la funcion a expoertar ej
+cont numero = 3
+
+export const Hola ()=>{
+    si ponemos las variables aca, cada vez que se renderice el componente vuelve a 
+    reasignar todas las variables a un lugar de memoria, mala práctica
+    return(
+        <div>                    //elemento padre, no se usa más div se usa <></>
+       <h6>{numero}</h6>         //hermano
+       <h5>                      //hermano
+       persona
+       <p>descripción</p>        //hijo
+       </h5>
+        </div>
+    )
+}
+
+para renderizar un objeto, JSON.stringify(objeto)
+                   |- funcion funcion() // hay que ejecutarla
+estilos
+el estilo se puede poner el archivo style y el jsx en la misma carpeta, crear una carpeta para cada jsx y estilo, 
+o crear una carpeta para componentes y otra para estilos
+
+
+props
+props, objetos que tienen valores para pasar información de un objeto padre a un objeto hijo
+
+ej :
+<app titulo="soy el valor"/>titulo={3}para pasar un number sino pasa un string
+componente hijo
+export const app(props || {titulo, subtitulo="forma de pasar por defecto un valor en caso de que no llegue nada"}){
+    render(
+        <div>{props.titulo}</div>
+    )
+}
+
+PropTypes
+
+nombre del componente.Proptypes
+
+ej 
+componenteHijo.PropTypes ={
+   titulo = PropTypes.string.isRequired,
+   subtitulo = PropTypes.number.isRequired,
+}
+
+defaultProps
+//para casa que no venga nada en el componente y no lance error
+
+componenteHijo.defaultProps = {
+    titulo: 'Curso de React',
+    subtitulo: 1
+}
+
+Eventos
+
+mecanismo por los que los componentes 
+pueden reaccionar a las interaccones del usuario
+los eventos comienzan con on
+function(){
+    const handleClik(event)=>{
+
+    }
+    const handleClik(event, otroArgument)=>{
+
+    }
+return(
+
+<button onclick(handleClik)/> // si pasamos solo un argumento
+<button onclick((event)=>{handleClik(event, otroArgument)})/> // para más argumentos
+
+)
+}
+
+
+////para sacar del componente las funciones
+  const handleClik(event)=>{
+
+    }
+    const handleClik(event, otroArgument)=>{
+
+    }
+function Button ()={
+    return(
+<button onclick(handleClik)/> // si pasamos solo un argumento
+
+    )
+}
+function(){
+  
+return(
+
+<Button/> // para más argumentos
+
+)
+}
+
+Hooks
+
+se introducen con react 16.8 en los funcional components para manejar el estado de react
+y otras carácteristicas sin la necesidad de componente de clases
+Son formas de hacer funciones fáciles legibles y reutilizables
+
+estado en react, es un objeto que contiene datos y representa la información que una interfaz de usuario
+necesita para poder renderizarse y funcionar correctamente.
+El estado es mutable, a través de hooks en funcional componentes se puede modificar el estado
+y react solamente modificara la parte que a interactuado con el usuario
+muestra el cambio en tiempo real en la pantalla 
+
+
+export const function contador ({value}){ // valor que pasa el padre
+const [cont, setCont] = useState(value);
+
+}
+push  se usa para modificar arryas, para modificar estados NO
+
+// const para que no se pueda sobreescribir
+o
+tecla windows + . (muestra iconos :(o))
+
+// atomic disagn
+
+diseño de las interfaces de usuario, se basa en la creacion y organización de componentes reutilizables
+componentes pequeños, indivisibles, como bottones, inputs
+
+
+// en react(jsx) se usa className, no se usa class
+
+//formulario
+
+para que no se actualice la página con el submit se ponemos
+preventDefault
+
+
+//FETCH json place holder para tener una api ficticia de usuarios
+
+https://jsonplaceholder.org/users
+
+useEffect tiene sentido solo usarlo si la dependencia cambia
+
+// useRef es un hook de referencia se utiliza para enlazar una parte del jsx
+a una información para retenerla, como referencia, se mantiene por más que se renderice
+el componente en uno de los elementos del dom; en el infinitive scroll se usa también, para guardar una referencia
+a un elemento del DOM
+
+/// useMemo
+
+para cuando se redibuje el componente y no queremos que se vuelvan a llamar metodos que utilizan recursos
+de la computadora, pueden ser llamadas a apis, o meteodos que requieran muchos recursos. Entonces usamos useMemo, para memorizar 
+fragmentos de los métodos y no repetir, salvo que cambie alguna dependencia
+
+
+//useCallback 
+
+callback Funcion que se pasa dentro de otra funcion como argumento, useCallback memoriza funciones, no variables como useMemo
+
+//Reducer
+
+es una función que recibe estado inicial, una acción para hacer y devuelve un estado modificado
+no puede hacer acciones asíncronas, ni setear en el sesion ni local storage; es para hacer modificaciones puntuales
+en el objeto del estado   
+type, tipo de tarea; payload: carga , lo que se va a ver implementado en el estado inicial para devolver un estado modificado
+
+
+//Router
+
+los componentes van a ser rutas/pantallas
+
+useContext a diferencia de pasar información de padre a hijo, va a ser información disponible de una capa hacía abajo
+
+por ej si nos logeamos en un aplicación el usario tiene que estar disponible en todos los compoonentes; estado gloabl a toda la aplicación
+puede ser global a toda la aplicación o de sectores, contexto global disponible, sin necesidad de pasarlo de padre a hijo
+
+NavLink a diferencia de link permite hacer un resaltado
+
+con REact Ruter, hacemos SINGLE PAGE APLICATION, es decir cambiando la url cambia la pantalla(componente que se muestra), sin que se recarge la pantalla
+
+
+//useContext
+
+si por ej si en una aplicación un usuario se logea y querés que la aplicación responda a su mail, nombre etc, y no querés que toda la aplicaicón le este pidiendo
+por cada componente que rellene su nombre, su mail, se puede haer un context donde se carga la información del usuario y toda la aplicaicón hacia abajo de ese contexto
+va a estar provista de este usuario
