@@ -1,9 +1,10 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
 import "./index.css";
-import { AppRoute } from "./AppRoute/AppRoute";
+// import { AppRoute } from "./AppRoute/AppRoute";
 import { BrowserRouter } from "react-router-dom";
-
+import {WheatherApp} from './wheatherApp/WheatherApp'
+import './wheatherApp/styles.module.css'
 // import {Component }from "./formMain";
 // import { Fetch } from "./fetching/fetchMain";
 
@@ -17,7 +18,8 @@ import { BrowserRouter } from "react-router-dom";
 ReactDOM.createRoot(document.getElementById("root")).render(
   <React.StrictMode>
     <BrowserRouter> 
-      <AppRoute />       {/* provee información que la familia de componentes necesita que tenga hacia abajo */}
+    <WheatherApp/>
+      {/* <AppRoute />       provee información que la familia de componentes necesita que tenga hacia abajo */}
 
       {/* <TaskList/> */}
       {/* <HeavyCalcs/> */}
