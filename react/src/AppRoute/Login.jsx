@@ -1,23 +1,22 @@
-import {  useContext } from "react";
+import { useContext } from "react";
 import { useForm } from "../Forms/customHook/useForm";
 
-import { Usuariocontext } from "../context/Usuariocontext";
+import { Usuariocontext } from "./context/Usuariocontext";
 
 export const Login = () => {
-    const initialForm ={
-        name:'',
-        tech:'',
-        mail:'',
-        redes:'',
+  const initialForm = {
+    name: "",
+    tech: "",
+    mail: "",
+    redes: "",
+  };
 
-    }
-
-    const { forms,  name, tech, mail, redes, onInputChange} = useForm(initialForm);
-    const {setUsuario} = useContext(Usuariocontext)
-    const onSubmit = (e)=>{
-        e.preventDefault(),
-        setUsuario(forms)
-    }
+  const { forms, name, tech, mail, redes, onInputChange } =
+    useForm(initialForm);
+  const { setUsuario } = useContext(Usuariocontext);
+  const onSubmit = (e) => {
+    e.preventDefault(), setUsuario(forms);
+  };
   return (
     <form onSubmit={onSubmit}>
       <div className="mb-3">
@@ -32,10 +31,9 @@ export const Login = () => {
           placeholder="name"
           value={name}
           onChange={onInputChange}
-        >
-        </input>
+        ></input>
       </div>
-    
+
       <div className="mb-3">
         <label htmlFor="mail" className="form-label">
           Email
@@ -48,8 +46,7 @@ export const Login = () => {
           placeholder="name"
           value={mail}
           onChange={onInputChange}
-        >
-        </input>
+        ></input>
       </div>
       <div className="mb-3">
         <label htmlFor="tech" className="form-label">
@@ -63,8 +60,7 @@ export const Login = () => {
           placeholder="tech"
           value={tech}
           onChange={onInputChange}
-        >
-        </input>
+        ></input>
       </div>
       <div className="mb-3">
         <label htmlFor="Redes" className="form-label">
@@ -78,11 +74,11 @@ export const Login = () => {
           placeholder="nets"
           value={redes}
           onChange={onInputChange}
-        >
-        </input>
+        ></input>
       </div>
-      <button  type="submit" className="btn btn-primary">Registrar</button>
-
+      <button type="submit" className="btn btn-primary">
+        Registrar
+      </button>
     </form>
   );
 };

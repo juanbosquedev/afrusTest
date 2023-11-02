@@ -4,7 +4,7 @@ import { Routes, Route, Navigate } from "react-router-dom";
 import { Home } from "./Home";
 import { Contact } from "./Contact";
 import { About } from "./About";
-import { UsuarioProvider } from "../context/UsuarioProvider";
+import { UsuarioProvider } from "./context/UsuarioProvider";
 import { Login } from "./Login";
 
 export const AppRoute = () => {
@@ -20,6 +20,6 @@ export const AppRoute = () => {
         {/*por si le ponemos mal la ruta */}
       </Routes>
       <hr />
-      </UsuarioProvider>
+    </UsuarioProvider>
   );
 };

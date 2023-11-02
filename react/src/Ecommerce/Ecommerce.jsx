@@ -1,21 +1,24 @@
-// import './styles.css'
-
-import { Navigate, Route, Routes } from "react-router-dom";
-import { NavBar } from "./components/NavBar";
+import { Navigate, Routes, Route } from "react-router-dom";
+import { CartProvider } from "./context/CartProvider";
+import { ProductProvider } from "./context/ProductProvider";
 import { CartPage } from "./pages/CartPage";
 import { ComprasPage } from "./pages/ComprasPage";
+import { NavBar } from "./components/NavBar";
 
 export const Ecommerce = () => {
   return (
-    <>
-      <NavBar></NavBar>
-      <div className="container">
+    <ProductProvider>
+      <CartProvider>
+        <NavBar></NavBar>
+          <div className="container">
         <Routes>
-          <Route path="/" element={<ComprasPage/>}></Route>
-          <Route path="/cart" element={<CartPage/>}></Route>
-          <Route path="/*" element={<Navigate to="/" />}></Route>
+
+          <Route path='/' element={<ComprasPage></ComprasPage>}></Route>
+          <Route path='/cart' element={<CartPage></CartPage>}></Route>
+          <Route path='/*' element={<Navigate to='/'/>}></Route>
         </Routes>
-      </div>
-    </>
+          </div>
+      </CartProvider>
+    </ProductProvider>
   );
 };
