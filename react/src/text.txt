@@ -172,7 +172,7 @@ useContext a diferencia de pasar información de padre a hijo, va a ser informac
 por ej si nos logeamos en un aplicación el usario tiene que estar disponible en todos los compoonentes; estado gloabl a toda la aplicación
 puede ser global a toda la aplicación o de sectores, contexto global disponible, sin necesidad de pasarlo de padre a hijo
 
-NavLink a diferencia de link permite hacer un resaltado
+NavLink a diferencia de link permite hacer un resaltado, con active(Hasta este momento, los componentes link y navLink en React Router funcionan igual. La diferencia principal es que el navLink, como su nombre indica, se usa principalmente para barras de navegación. Esto se debe a que nos va a dar una clase llamada «active» cuando el elemento haga match con el link en React.)
 
 con REact Ruter, hacemos SINGLE PAGE APLICATION, es decir cambiando la url cambia la pantalla(componente que se muestra), sin que se recarge la pantalla
 
@@ -182,3 +182,12 @@ con REact Ruter, hacemos SINGLE PAGE APLICATION, es decir cambiando la url cambi
 si por ej si en una aplicación un usuario se logea y querés que la aplicación responda a su mail, nombre etc, y no querés que toda la aplicaicón le este pidiendo
 por cada componente que rellene su nombre, su mail, se puede haer un context donde se carga la información del usuario y toda la aplicaicón hacia abajo de ese contexto
 va a estar provista de este usuario
+
+
+// installar material ui 
+
+npm install @mui/material @emotion/react @emotion/styled
+npm i @mui/icons-material
+
+material ui para componentes
+boostrap para estilos

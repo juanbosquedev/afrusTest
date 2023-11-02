@@ -3,7 +3,9 @@ import ReactDOM from "react-dom/client";
 // import "./index.css";
 // import { AppRoute } from "./AppRoute/AppRoute";
 import { BrowserRouter } from "react-router-dom";
-import { MovieApp } from "./MovieApp/MovieApp";
+import { Ecommerce } from "./Ecommerce/Ecommerce";
+
+// import { MovieApp } from "./MovieApp/MovieApp";
 // import {WheatherApp} from './wheatherApp/WheatherApp'
 // import './wheatherApp/styles.module.css'
 // import {Component }from "./formMain";
@@ -19,7 +21,8 @@ import { MovieApp } from "./MovieApp/MovieApp";
 ReactDOM.createRoot(document.getElementById("root")).render(
   <React.StrictMode>
     <BrowserRouter> 
-    <MovieApp/>
+    <Ecommerce/>
+    {/* <MovieApp/> */}
     {/* <WheatherApp/> */}
       {/* <AppRoute />       provee información que la familia de componentes necesita que tenga hacia abajo */}
 
