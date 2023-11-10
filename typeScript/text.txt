@@ -237,3 +237,117 @@ type Persona 2 = {
 
 
 // DATOS PRIMITIVOS
+
+number, string, boolean,
+
+//ARRAY
+
+para tipar un array en ts
+
+let ArrNumber:number[]=[1,2,3] arreglo de números
+let ArrStrings:string[]=["HTML", "JS", "TS"] arreglo de TS
+
+
+// OBJETO
+ts infiere el tipo de datos si no se lo pasamos y no lo podemos reeescribir con otro dato luego ej:
+
+let persona ={
+      nombre:"Juan"
+      tecnologias:["js", "ts"]
+
+}
+persona={
+      nombre:1, // va a lanzar error por que espera un string, infiere que nombre es de tipo string
+      tecnologias:["boostrap", "sequelize"]
+}
+
+el objeto tiene un tipdo interno que se debe ajustar a lo que contenga adentro el obejcto
+
+
+// TYPE
+
+para tipar objetos utilizamos type Programador (type, interface y clases) lo que sigue va siempre con mayúscula
+
+type Programador ={
+      nombre:string,
+      tecnologias:string[],
+      tomarMate?:boolean | null, // para que sea opcional, y ademas recibe dos tipos de datos. Evitar any
+}
+
+let programador:Programador={
+      nombre:"Juan",
+      tecnologias:["js", "ts"],
+      tomarMate:true,
+}
+let programador1:Programador={
+      nombre:"pedro",
+      tecnologias:["django", "html"],
+      tomarMate:true,
+}
+
+// INTERFACE
+
+funciona similar al type, pero se usan para cosas distintas y distintas funcionalidades
+
+interface Programador{
+      nombre:string,
+      tecnologias:string[],
+      tomarMate?:boolean | null, // para que sea opcional, y ademas recibe dos tipos de datos. Evitar any
+}
+
+let dev:Programador={
+      nombre:"Juan",
+      tecnologias:["js", "ts"],
+      tomarMate:true,
+}
+let dev1:Programador={
+      nombre:"pedro",
+      tecnologias:["django", "html"],
+      tomarMate:true,
+      apellido:"bosque",
+}
+
+function enviarCv(programador:Programador){
+
+console.log(` Este curriculum es de ${programador.nombre}`)
+console.log(` Este curriculum es de ${programador.apellido}`)//da error por que no esta definido en Programador liena 292
+}
+
+enviarCv(dev)
+
+si ponemos type en lugar de interface, dev1 no pertenece a programador es otro tipo de objeto, no tiene las mismas carácteristicas de type, tiene más carácteristicas
+
+por ej si el back agrega más caracteristicas no las vamos a poder acceder
+
+// POO 
+
+class Pelicula {
+      //en javascript estas propiedades no iria solamente se emepzaria desde el contructor linea 333
+      nombre:string; // da error pide inicializar   
+      nombre?:string;
+      protagonistas:string[]=[];
+      actores?: string[];
+      proyectarEnCine(){
+            console.log(`${this.nombre}  está siendo proyectada`)
+      }
+      constructor(nombre:string, protagonistas:string[], actores:string[]){
+            this.nombre=nombre; //this.nombre refiere a la propiedad de la clase, nombre refiere al argumento que llega
+            this.protagonistas=protagonistas;
+            this.actores=actores;
+      }
+}
+
+
+las clases son representaciones de objetos del mundo físico
+
+necesitamos una instancia
+
+const pelicula = new Pelicula()
+pelicula.nombre="batman";
+pelicula.proyectarEnCine() // devuelve batman esta siendo proyectada
+
+const pelicula1 = new Pelicula("barbie, ["barbie","ken"], ["ryan", "carlos"])
+
+console.log(pelicula1)
+
+la clase es como una especie de modelo que se instancias en nuevos objetos
