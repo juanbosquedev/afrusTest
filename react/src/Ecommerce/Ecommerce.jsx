@@ -6,6 +6,7 @@ import { ComprasPage } from "./pages/ComprasPage";
 import { NavBar } from "./components/NavBar";
 
 export const Ecommerce = () => {
+  //mejoras, buscardor, filtrar categorias de producto, el más y el menos que esten en la card, mostrar en grilla de 3, ordenar por precio
   return (
     <ProductProvider>
       <CartProvider>

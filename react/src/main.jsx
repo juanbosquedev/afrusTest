@@ -24,7 +24,8 @@ ReactDOM.createRoot(document.getElementById("root")).render(
     <Ecommerce/>
     {/* <MovieApp/> */}
     {/* <WheatherApp/> */}
-      {/* <AppRoute />       provee información que la familia de componentes necesita que tenga hacia abajo */}
+       {/* <AppRoute />  */}
+           {/*  provee información que la familia de componentes necesita que tenga hacia abajo */}
 
       {/* <TaskList/> */}
       {/* <HeavyCalcs/> */}

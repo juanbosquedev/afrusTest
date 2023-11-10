@@ -8,7 +8,7 @@ export const CartProvider = ({ children }) => {
   const comprasReducer = (state = initialState, action = {}) => {
     switch (action.type) {
       case "[CARRITO] Agregar Compra":
-        console.log(action.payload, " payload agregar")
+     
         return [...state, action.payload];
   
       case "[CARRITO] Aumentar Cantidad":

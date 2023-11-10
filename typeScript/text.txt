@@ -1,0 +1,239 @@
+
+
+// TypeScript
+
+Lenguaje de programación de código abierto, realizado por microsoft para extender Javascript. Lenguaje de programación typado statico
+permite tipo de datos a las variables, funciones y otros elementos del código
+
+Está creado para hacer aplicaciones javascript de forma robusta y solida, aunque sean escalables, grandes y complejas
+ayuda a reducir los errores, angular esta basado en typescript por lo que abre paso a angular
+
+- Es un super set de javascript, está basado en javascript, pero le da una nueva capa que le da más herramientas y robustes
+ 
+ es Javascript pero con tipado, lo vuelve más estricto, rigido,  menos flexible, evita errores
+
+ el código al estar tipado se entiende más, después el editor de código(vs) al estar tipada la variable, te va tirar solamente los métodos de 
+ ese tipo de dato ej string, number, el código se vuelve más sólido y más limpio
+
+ TypeScript está basado en javascript, 
+
+      -----comando tsc script.js 
+
+      genera un archivo js paralelo al ts que tengamos
+
+      ---modo observador
+
+      carácteristica propia de ts, cada vez que tenemos un ts hay que compilarlo en js para que funcione
+       cuando compile ts se convierte en js, ya que los archivos web funcionan con html y js
+       el modo observador es una carácteristica propia de ts que va a estar observando los cambios
+       y a partir del momento que se cambie va a generar la compilación automatica en js cuando guardemos
+
+       comando .tsc -w    // w=watch
+       asi por ej tsc nombre del archivo.ts -w
+       tsc script.ts -w
+ cada cambio se compila automaticamente
+
+ tsc init inicializa todo el proyecto en ts, y nos va a dar carácteristicas, va a observar todo el proyecto
+ y va a tener ciertas configuraciones para ayudarnos con los errores, para que sea más estricto
+
+ git -init(inicializa git)  node -init(iniciliaza node)
+
+ npm -y crea un archivo package json, en donde está el nombre y la versión
+
+ ahora luego de tsc -init va a compilar en js todos los archivos .ts que hagamos
+
+
+ // Tipos de datos con TYPE SCRIPT
+
+ 3 tipos: 
+ 1- Primitivos. 2- Compuestos. 3- Definidos por el usuario
+
+1_ STRING NUMBER BOOLEAN UNDEFINDED NULL
+2_OBJECT ARRAY ENUM FUNCTION
+3_ CLASS INTERFACE TYPE
+
+1 __ const str1: string = "comilla doble"
+     const str2: string = 'comilla simple'
+     const str3: string = `${nombre} y ${edad}`
+     const edad: number = 30 //enteros
+     edad: number = 3,0 //decimal
+     const num: number = 10^3 //notación exponencial
+     const num: number = 10^-3 //notación exponencial negativa
+     const num: number = 0xA //Hexadecimales (base 16) Ox
+    const num: number = 0o12 //octal (base 8) Oo
+ const edad: number = Ob1010 //binario Ob
+
+ se declara el tipo de variable, su nombre y el tipo de dato, luego el valor que asignamos
+
+ undefined no definidio, no asignado ningun tipo de valor, puede ser de varios tipos por ej string undefined,
+  null => no se le puede luego asignar otro tipo de valor
+
+
+  // OBJETO LITERAL
+
+const programador ={
+      nombre:"Juan",
+      cursos:["html","css","js"],
+      viajesUsa:null
+}
+para tiparlo se necesita hacer una interface o un tipo para poder asignralo un tipo
+
+TypeScript es una capa superiro de javascript, le da funcionalidades extras, es un super set, en el fondo sigue siendo javascript
+
+
+//ARRAYS
+
+si necesitas array de números
+
+const numArr: number[]=[1,2,3,4]
+array de strings
+const strArr: string[]=["juan", "maria", "pedro"]
+array de booleanos
+const boolArr: boolean[]=[true,true,false]
+
+// ENUM 
+
+enumerados
+
+enum DiasSemana{
+      Lunes,
+      Martes,
+      Miércoles,
+      Jueves,
+      Viernes,
+      Sábado,
+      Domingo
+}
+
+// ENUM con valores de cadena {String Enum}
+
+enum Colores{
+      Rojo= "rojo",
+      Verde= "verde",
+      Azul= "azul",
+}
+
+//funciones
+le pasamos el tipado del valor y lo que va a devolver la función
+                                 :number(es el tipo que va a devolver)
+function sumar(a:number,b:number): number{
+      return a+b;
+}
+
+funcion flecha
+en este caso infiere que es tipo number
+const dividir =(a:number,b:number)=> a/b;
+
+funciones con parámetros opcionales:
+si está mezclado number y string devolver string
+el signo de pregunta en edad? significa que no es obligatorio mandar como parámetro edad
+function saludar(nombre:string, edad?:number):string{
+      if(edad !== undefined){
+            return `hola, mi nombre es ${nombre} y tengo ${edad}` años
+      } else {
+            return `hola, mi nombre es ${nombre}. `;
+      }
+
+}
+
+funciones con parámetros por defecto
+en caso de edad si no le mandas el valor por defecto es 30
+
+function saludar2(nombre:string, edad:number=30):string{
+      return `hola, mi nombre es ${nombre} y tengo ${edad}  años`
+}
+
+
+class Persona {
+      nombre: string;
+
+      constructor (nombre:string){
+            this.nombre = nombre;
+
+      }
+      saludar(){
+            console.log(`Hola, mi nombre es ${this.nombre}.`)
+      }
+}
+
+// INTERFACES
+
+interfas básica
+
+interface Persona{
+      nombre:string;
+      edad:number;
+}
+
+interfas con propiedades opcionales
+
+interface Producto{
+      nombre:string;
+      precio:number;
+      descripcion?:string;
+}
+
+
+interfas para funciones
+
+interface Comprador{
+      (a:number,b:number):boolean;
+}
+
+interfas para clases (class interfaces):
+
+interface Personas{
+      nombre:string;
+      edad:number;
+      saludar():void;
+}
+
+para una clase por ej
+class Persona implement Personas {
+      nombre: string;
+      edad
+      constructor (nombre:string){
+            this.nombre = nombre;
+
+      }
+      saludar(){
+            console.log(`Hola, mi nombre es ${this.nombre}.`)
+      }
+}
+
+
+//tipe básico
+type Number = number;
+
+type Persona1= {
+      nombre:string;
+      edad:number;
+}
+
+// type con union types:
+Type Nombre = string | null;
+
+
+//type con propiedades opcionales
+type Product1= {
+      nombre:string;
+      precio:number;
+      descripcion?:string;
+}
+
+
+//type para funciones
+type Comprador1={
+      (a:number,b:number):boolean
+}
+
+//type para clases (clases types):
+
+type Persona 2 = {
+      nombre:string;
+      edad:number;
+      saludar():void;
+}
+
+
+// DATOS PRIMITIVOS

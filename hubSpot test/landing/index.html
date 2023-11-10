@@ -1,0 +1,1943 @@
+<!doctype html>
+    <html lang="es-ES">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="profile" href="https://gmpg.org/xfn/11">
+    <meta name="author" content="Dinocloud"/>
+   <link rel="icon" href="https://dinocloud.co/wp-content/themes/Dinocloud/assets/favicon.png" />
+   <style type="text/css">
+        body {height: 100%;}
+        #header {
+            position: fixed;
+            width: 100%;
+            z-index: 10000;
+            background: #fff;
+            top: 0;
+            padding: 10px;
+        }
+        #site-header {
+            z-index: 1;
+            position: relative;
+        }
+        .container {
+            max-width: 1240px !important;
+            margin: auto !important
+        }
+        .wp-block-columns {
+            display: flex;
+            margin-bottom: 20px;
+            flex-wrap: wrap;
+        }
+        *.uagb-section__wrap {
+            padding-top: 20px;
+            padding-bottom: 20px;
+            padding-left: 20px;
+            padding-right: 20px;
+            margin-right: auto;
+            margin-left: auto;
+            max-width: 100%;
+            position: relative;
+            max-width: 1240px !important;
+        }
+        .uagb-section__wrap {
+            padding: 20px !important;
+            margin-right: auto !important;
+            margin-left: auto !important;
+            max-width: 100% !important;
+            position: relative !important;
+        }
+        .uagb-section__wrap .uagb-section__inner-wrap {
+            margin-left: auto !important;
+            margin-right: auto !important;
+            position: relative !important;
+            z-index: 2 !important;
+            min-height: 100% !important;
+            max-width: 1240px !important;
+        }
+        h2 {
+            font-size: 36px;
+    		line-height: normal;
+    		font-weight: 700;
+			margin-bottom: 0;
+			color: #000;
+			text-transform: none;
+			letter-spacing: none;
+			font-family: Montserrat;
+        }
+        p, ul {
+            font-size: 16px;
+            margin-bottom: 10px;
+            line-height: normal;
+            color: #000;
+            font-family: 'Source Sans Pro';
+        }
+        b, strong {
+            font-weight: 900;
+        }
+        embed, img, object, svg {
+            display: block;
+            height: auto;
+            max-width: 100%;
+        }
+        label {
+            font-size: 16px !important;
+        }
+        .row-content {
+            position: absolute;
+            z-index: 1;
+            width: 100% !important;
+        }
+    </style>
+                   <style type="text/css">
+            .box-bg {
+                padding: 40px 20px !important;
+            }
+
+            @media (max-width: 750px) {
+                .wp-block-spacer {height: 20px !important;}
+                .bg_hero {
+                    background: #017B48;
+                    padding: 0;
+                    height:45vh;
+                    margin-top: 80px;
+                    background-size: cover;
+                    margin-bottom: 0;
+                    display: flex;
+                    justify-content: center;
+                    align-content: center;
+                    flex-direction: column;
+                }
+                .bg_hero h1 {
+                    text-transform: none;
+                    font-size: 30px !important;
+                    font-weight: 700 !important;
+                    color: #ffffff; margin-bottom: 10px;
+                    text-align: center;
+                    letter-spacing: .05em;
+                    font-family: Montserrat;
+                    padding: 0 20px 0 20px;
+                }
+                .bg_hero h1 span {background: #00AF66; padding: 7px;}
+                .bg_hero h2 {
+                    font-size: 28px
+                }
+                .bg_hero p {
+                    font-size: 20px;
+                    padding: 0 20px 0 20px;
+                    margin: 0;
+                    line-height: 30px;
+                    font-family: 'Source Sans Pro';
+                    font-weight: 400;
+                    color: #ffffff;
+                    text-align: center;
+                }
+                .bg-numbers {background: #00884F;}
+                .btn-home {
+                    width: auto;
+                    margin: auto;
+                    background: #fff;
+                    color: #00AF66;
+                    padding: 15px 40px;
+                    font-size: 14px;
+                    text-align: center;
+                    border-radius: 40px;
+                    display: block;
+                    cursor: pointer;
+                    border: none;
+                    text-decoration: none;
+                    font-weight: normal;
+                    display: inline-block;
+                    font-size: 22px;
+                }
+                h2 {
+                    font-size: 26px !important;
+                    line-height: 32px !important;
+                    font-weight: 700 !important;
+                    margin-bottom: 0;
+                    color: #000;
+                    text-transform: normal;
+                    letter-spacing: .05em;
+                    font-family: Montserrat;
+                }
+                p, ul {
+                    font-size: 16px;
+                    margin-bottom: 10px;
+                    line-height: 28px;
+                    color: #000;
+                    font-family: 'Source Sans Pro';
+                }
+                b, strong {
+                    font-weight: 900 !important;
+                }
+            }
+            @media (min-width: 751px) {
+                .wp-block-spacer {min-height: 10px;}
+                .mb-3, .my-3 {
+                    margin-bottom: 1rem !important
+                }
+                .mt-4, .my-4 {
+                    margin-top: 1.5rem !important
+                }
+                .wp-block-spacer {min-height: 10px;}
+                .uagb-section__wrap .uagb-section__overlay {
+                    height: 100%;
+                    width: 100%;
+                    top: 0;
+                    left: 0;
+                    position: absolute;
+                }
+                .has-text-align-center {
+                    text-align: center;
+                }
+                .bg_hero {
+                    height: 25vh;
+                    padding: 0;
+                    margin-top: 100px;
+                    background: #017B48;
+                    background-size: cover;
+                    margin-bottom: 0;
+                    display: flex;
+                    justify-content: center;
+                    align-content: center;
+                    flex-direction: column;
+                }
+
+                .bg_hero h1 {
+                    font-size: 30px !important;
+                    font-weight: 700 !important;
+                    text-transform: none;
+                    font-family: Montserrat;
+                    color: #ffffff;
+                    margin-bottom: 0px;
+                    text-align: center;
+                }
+                .bg_hero h1 span {background: #00AF66; padding: 0;}
+                .bg_hero h2 {
+                    font-weight: 700;
+                    font-size: 46px;
+                    text-transform: normal;
+                    font-family: Montserrat;
+                }
+
+                .bg_hero p {
+                    margin: 0;
+                    font-size: 24px;
+                    margin-bottom: 0;
+                    font-family: 'Source Sans Pro';
+                    font-weight: 400;
+                    line-height: 37px;
+                    color: #ffffff;
+                    text-align: left;
+                }
+                .bg-numbers {background: #00884F;}
+                .btn-home {
+                    width: auto;
+                    margin: auto;
+                    background: #fff;
+                    color: #00AF66;
+                    padding: 15px 40px;
+                    font-size: 14px;
+                    text-align: center;
+                    border-radius: 40px;
+                    display: block;
+                    cursor: pointer;
+                    border: none;
+                    text-decoration: none;
+                    font-weight: normal;
+                    display: inline-block;
+                    font-size: 22px;
+                }
+                h2 {
+                    font-size: 32px;
+                    line-height: 32px;
+                    font-weight: 700;
+                    margin-bottom: 0;
+                    color: #000;
+                    text-transform: normal;
+                    letter-spacing: .05em;
+                    font-family: Montserrat;
+                }
+                p, ul {
+                    font-size: 16px;
+                    margin-bottom: 10px;
+                    line-height: 28px;
+                    color: #000;
+                    font-family: 'Source Sans Pro';
+                }
+                b, strong {
+                    font-weight: 900 !important;
+                }
+            }
+        </style>
+                <style type="text/css">
+            .box-bg {
+                padding: 40px 20px !important;
+            }
+
+            @media (max-width: 750px) {
+                .wp-block-spacer {height: 20px !important;}
+                .bg_hero {
+                    background: #017B48;
+                    padding: 0;
+                    height:45vh;
+                    margin-top: 80px;
+                    background-size: cover;
+                    margin-bottom: 0;
+                    display: flex;
+                    justify-content: center;
+                    align-content: center;
+                    flex-direction: column;
+                }
+                .bg_hero h1 {
+                    text-transform: none;
+                    font-size: 30px !important;
+                    font-weight: 700 !important;
+                    color: #ffffff; margin-bottom: 10px;
+                    text-align: center;
+                    letter-spacing: .05em;
+                    font-family: Montserrat;
+                    padding: 0 20px 0 20px;
+                }
+                .bg_hero h1 span {background: #00AF66; padding: 7px;}
+                .bg_hero h2 {
+                    font-size: 28px
+                }
+                .bg_hero p {
+                    font-size: 20px;
+                    padding: 0 20px 0 20px;
+                    margin: 0;
+                    line-height: 30px;
+                    font-family: 'Source Sans Pro';
+                    font-weight: 400;
+                    color: #ffffff;
+                    text-align: center;
+                }
+                .bg-numbers {background: #00884F;}
+                .btn-home {
+                    width: auto;
+                    margin: auto;
+                    background: #fff;
+                    color: #00AF66;
+                    padding: 15px 40px;
+                    font-size: 14px;
+                    text-align: center;
+                    border-radius: 40px;
+                    display: block;
+                    cursor: pointer;
+                    border: none;
+                    text-decoration: none;
+                    font-weight: normal;
+                    display: inline-block;
+                    font-size: 22px;
+                }
+                h2 {
+                    font-size: 26px;
+                    line-height: 32px;
+                    font-weight: 700;
+                    margin-bottom: 0;
+                    color: #000;
+                    text-transform: normal;
+                    letter-spacing: .05em;
+                    font-family: Montserrat;
+                }
+                p, ul {
+                    font-size: 16px;
+                    margin-bottom: 10px;
+                    line-height: 28px;
+                    color: #000;
+                    font-family: 'Source Sans Pro';
+                }
+                b, strong {
+                    font-weight: 900 !important;
+                }
+            }
+            @media (min-width: 751px) {
+                .wp-block-spacer {min-height: 10px;}
+                .mb-3, .my-3 {
+                    margin-bottom: 1rem !important
+                }
+                .mt-4, .my-4 {
+                    margin-top: 1.5rem !important
+                }
+                .wp-block-spacer {min-height: 10px;}
+                .uagb-section__wrap .uagb-section__overlay {
+                    height: 100%;
+                    width: 100%;
+                    top: 0;
+                    left: 0;
+                    position: absolute;
+                }
+                .has-text-align-center {
+                    text-align: center;
+                }
+                .bg_hero {
+                    height: 25vh;
+                    padding: 0;
+                    margin-top: 100px;
+                    background: #017B48;
+                    background-size: cover;
+                    margin-bottom: 0;
+                    display: flex;
+                    justify-content: center;
+                    align-content: center;
+                    flex-direction: column;
+                }
+
+                .bg_hero h1 {
+                    font-size: 30px !important;
+                    font-weight: 700 !important;
+                    text-transform: none;
+                    font-family: Montserrat;
+                    color: #ffffff;
+                    margin-bottom: 0;
+                    text-align: center;
+                }
+                .bg_hero h1 span {background: #00AF66; padding: 0;}
+                .bg_hero h2 {
+                    font-weight: 700;
+                    font-size: 46px;
+                    text-transform: uppercase;
+                    font-family: Montserrat;
+                }
+
+                .bg_hero p {
+                    margin: 0;
+                    font-size: 24px;
+                    margin-bottom: 0;
+                    font-family: 'Source Sans Pro';
+                    font-weight: 400;
+                    line-height: 37px;
+                    color: #ffffff;
+                    text-align: left;
+                }
+                .bg-numbers {background: #00884F;}
+                .btn-home {
+                    width: auto;
+                    margin: auto;
+                    background: #fff;
+                    color: #00AF66;
+                    padding: 15px 40px;
+                    font-size: 14px;
+                    text-align: center;
+                    border-radius: 40px;
+                    display: block;
+                    cursor: pointer;
+                    border: none;
+                    text-decoration: none;
+                    font-weight: normal;
+                    display: inline-block;
+                    font-size: 22px;
+                }
+                h2 {
+                    font-size: 32px;
+                    line-height: normal;
+                    font-weight: 700;
+                    margin-bottom: 0;
+                    color: #000;
+                    text-transform: none;
+                    letter-spacing: normal;
+                    font-family: Montserrat;
+                }
+                p, ul {
+                    font-size: 16px;
+                    margin-bottom: 10px;
+                    line-height: 28px;
+                    color: #000;
+                    font-family: 'Source Sans Pro';
+                }
+                b, strong {
+                    font-weight: 900 !important;
+                }
+            }
+        </style>
+        
+	<link rel="stylesheet" type="text/css" href="https://dinocloud.co/wp-content/themes/Dinocloud/style.css"/>
+		<link rel="stylesheet" type="text/css" href="https://dinocloud.co/wp-content/themes/Dinocloud/assets/css/custom.css?ver=234"/>
+    <meta name='robots' content='index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1' />
+<link rel="alternate" hreflang="en" href="https://dinocloud.co/your-ideal-tech-partner/" />
+<link rel="alternate" hreflang="es" href="https://dinocloud.co/es/tu-partner-tecnologico-ideal/" />
+<link rel="alternate" hreflang="x-default" href="https://dinocloud.co/your-ideal-tech-partner/" />
+
+	<!-- This site is optimized with the Yoast SEO Premium plugin v19.5 (Yoast SEO v19.10) - https://yoast.com/wordpress/plugins/seo/ -->
+	<title>RECRUITMENT SERVICE JULI |</title>
+	<meta name="description" content="DinoCloud es Tu Partner Tecnológico Ideal. Libera todo el potencial de la nube junto con un Partner Premier de AWS." />
+	<link rel="canonical" href="https://dinocloud.co/es/tu-partner-tecnologico-ideal/" />
+	<meta property="og:locale" content="es_ES" />
+	<meta property="og:type" content="article" />
+	<meta property="og:title" content="Your Ideal Tech Partner" />
+	<meta property="og:description" content="DinoCloud es Tu Partner Tecnológico Ideal. Libera todo el potencial de la nube junto con un Partner Premier de AWS." />
+	<meta property="og:url" content="https://dinocloud.co/es/tu-partner-tecnologico-ideal/" />
+	<meta property="og:site_name" content="DinoCloud" />
+	<meta property="article:publisher" content="https://www.facebook.com/dinocloudcons" />
+	<meta property="article:modified_time" content="2023-09-15T14:50:30+00:00" />
+	<meta property="og:image" content="https://dinocloud.co/wp-content/uploads/badgesCompetenciesWhite.svg" />
+	<meta name="twitter:card" content="summary_large_image" />
+	<meta name="twitter:site" content="@dinocloud_" />
+	<meta name="twitter:label1" content="Tiempo de lectura" />
+	<meta name="twitter:data1" content="3 minutos" />
+	<script type="application/ld+json" class="yoast-schema-graph">{"@context":"https://schema.org","@graph":[{"@type":"WebPage","@id":"https://dinocloud.co/es/tu-partner-tecnologico-ideal/","url":"https://dinocloud.co/es/tu-partner-tecnologico-ideal/","name":"Your Ideal Tech Partner | DinoCloud","isPartOf":{"@id":"https://dinocloud.co/#website"},"primaryImageOfPage":{"@id":"https://dinocloud.co/es/tu-partner-tecnologico-ideal/#primaryimage"},"image":{"@id":"https://dinocloud.co/es/tu-partner-tecnologico-ideal/#primaryimage"},"thumbnailUrl":"https://dinocloud.co/wp-content/uploads/badgesCompetenciesWhite.svg","datePublished":"2023-01-19T18:34:48+00:00","dateModified":"2023-09-15T14:50:30+00:00","description":"DinoCloud es Tu Partner Tecnológico Ideal. Libera todo el potencial de la nube junto con un Partner Premier de AWS.","breadcrumb":{"@id":"https://dinocloud.co/es/tu-partner-tecnologico-ideal/#breadcrumb"},"inLanguage":"es","potentialAction":[{"@type":"ReadAction","target":["https://dinocloud.co/es/tu-partner-tecnologico-ideal/"]}]},{"@type":"ImageObject","inLanguage":"es","@id":"https://dinocloud.co/es/tu-partner-tecnologico-ideal/#primaryimage","url":"https://dinocloud.co/wp-content/uploads/badgesCompetenciesWhite.svg","contentUrl":"https://dinocloud.co/wp-content/uploads/badgesCompetenciesWhite.svg","width":346,"height":108,"caption":"AWS Badges and Competencies DinoCloud"},{"@type":"BreadcrumbList","@id":"https://dinocloud.co/es/tu-partner-tecnologico-ideal/#breadcrumb","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://dinocloud.co/es/"},{"@type":"ListItem","position":2,"name":"Landings","item":"https://dinocloud.co/es/"},{"@type":"ListItem","position":3,"name":"Your Ideal Tech Partner"}]},{"@type":"WebSite","@id":"https://dinocloud.co/#website","url":"https://dinocloud.co/","name":"DinoCloud","description":"Cloud computing, cloud engineering, &amp; devops services","publisher":{"@id":"https://dinocloud.co/#organization"},"potentialAction":[{"@type":"SearchAction","target":{"@type":"EntryPoint","urlTemplate":"https://dinocloud.co/?s={search_term_string}"},"query-input":"required name=search_term_string"}],"inLanguage":"es"},{"@type":"Organization","@id":"https://dinocloud.co/#organization","name":"DinoCloud","url":"https://dinocloud.co/","logo":{"@type":"ImageObject","inLanguage":"es","@id":"https://dinocloud.co/#/schema/logo/image/","url":"","contentUrl":"","caption":"DinoCloud"},"image":{"@id":"https://dinocloud.co/#/schema/logo/image/"},"sameAs":["https://www.instagram.com/dinocloud_/","https://www.linkedin.com/company/dinocloud","https://www.youtube.com/c/DinoCloudConsulting","https://www.facebook.com/dinocloudcons","https://twitter.com/dinocloud_"]}]}</script>
+	<!-- / Yoast SEO Premium plugin. -->
+
+
+<link rel='dns-prefetch' href='//js.hs-scripts.com' />
+<link href='https://fonts.gstatic.com' crossorigin rel='preconnect' />
+<link rel="alternate" type="application/rss+xml" title="DinoCloud &raquo; Comentario Your Ideal Tech Partner del feed" href="https://dinocloud.co/es/tu-partner-tecnologico-ideal/feed/" />
+<style type="text/css">
+img.wp-smiley,
+img.emoji {
+	display: inline !important;
+	border: none !important;
+	box-shadow: none !important;
+	height: 1em !important;
+	width: 1em !important;
+	margin: 0 0.07em !important;
+	vertical-align: -0.1em !important;
+	background: none !important;
+	padding: 0 !important;
+}
+</style>
+	<link rel='stylesheet' id='wp-block-library-css'  href='https://dinocloud.co/wp-includes/css/dist/block-library/style.min.css?ver=6.0.6' type='text/css' media='all' />
+<style id='global-styles-inline-css' type='text/css'>
+body{--wp--preset--color--black: #000000;--wp--preset--color--cyan-bluish-gray: #abb8c3;--wp--preset--color--white: #ffffff;--wp--preset--color--pale-pink: #f78da7;--wp--preset--color--vivid-red: #cf2e2e;--wp--preset--color--luminous-vivid-orange: #ff6900;--wp--preset--color--luminous-vivid-amber: #fcb900;--wp--preset--color--light-green-cyan: #7bdcb5;--wp--preset--color--vivid-green-cyan: #00d084;--wp--preset--color--pale-cyan-blue: #8ed1fc;--wp--preset--color--vivid-cyan-blue: #0693e3;--wp--preset--color--vivid-purple: #9b51e0;--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple: linear-gradient(135deg,rgba(6,147,227,1) 0%,rgb(155,81,224) 100%);--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan: linear-gradient(135deg,rgb(122,220,180) 0%,rgb(0,208,130) 100%);--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange: linear-gradient(135deg,rgba(252,185,0,1) 0%,rgba(255,105,0,1) 100%);--wp--preset--gradient--luminous-vivid-orange-to-vivid-red: linear-gradient(135deg,rgba(255,105,0,1) 0%,rgb(207,46,46) 100%);--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray: linear-gradient(135deg,rgb(238,238,238) 0%,rgb(169,184,195) 100%);--wp--preset--gradient--cool-to-warm-spectrum: linear-gradient(135deg,rgb(74,234,220) 0%,rgb(151,120,209) 20%,rgb(207,42,186) 40%,rgb(238,44,130) 60%,rgb(251,105,98) 80%,rgb(254,248,76) 100%);--wp--preset--gradient--blush-light-purple: linear-gradient(135deg,rgb(255,206,236) 0%,rgb(152,150,240) 100%);--wp--preset--gradient--blush-bordeaux: linear-gradient(135deg,rgb(254,205,165) 0%,rgb(254,45,45) 50%,rgb(107,0,62) 100%);--wp--preset--gradient--luminous-dusk: linear-gradient(135deg,rgb(255,203,112) 0%,rgb(199,81,192) 50%,rgb(65,88,208) 100%);--wp--preset--gradient--pale-ocean: linear-gradient(135deg,rgb(255,245,203) 0%,rgb(182,227,212) 50%,rgb(51,167,181) 100%);--wp--preset--gradient--electric-grass: linear-gradient(135deg,rgb(202,248,128) 0%,rgb(113,206,126) 100%);--wp--preset--gradient--midnight: linear-gradient(135deg,rgb(2,3,129) 0%,rgb(40,116,252) 100%);--wp--preset--duotone--dark-grayscale: url('#wp-duotone-dark-grayscale');--wp--preset--duotone--grayscale: url('#wp-duotone-grayscale');--wp--preset--duotone--purple-yellow: url('#wp-duotone-purple-yellow');--wp--preset--duotone--blue-red: url('#wp-duotone-blue-red');--wp--preset--duotone--midnight: url('#wp-duotone-midnight');--wp--preset--duotone--magenta-yellow: url('#wp-duotone-magenta-yellow');--wp--preset--duotone--purple-green: url('#wp-duotone-purple-green');--wp--preset--duotone--blue-orange: url('#wp-duotone-blue-orange');--wp--preset--font-size--small: 13px;--wp--preset--font-size--medium: 20px;--wp--preset--font-size--large: 36px;--wp--preset--font-size--x-large: 42px;}.has-black-color{color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-color{color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-color{color: var(--wp--preset--color--white) !important;}.has-pale-pink-color{color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-color{color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-color{color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-color{color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-color{color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-color{color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-color{color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-color{color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-color{color: var(--wp--preset--color--vivid-purple) !important;}.has-black-background-color{background-color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-background-color{background-color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-background-color{background-color: var(--wp--preset--color--white) !important;}.has-pale-pink-background-color{background-color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-background-color{background-color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-background-color{background-color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-background-color{background-color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-background-color{background-color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-background-color{background-color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-background-color{background-color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-background-color{background-color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-background-color{background-color: var(--wp--preset--color--vivid-purple) !important;}.has-black-border-color{border-color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-border-color{border-color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-border-color{border-color: var(--wp--preset--color--white) !important;}.has-pale-pink-border-color{border-color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-border-color{border-color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-border-color{border-color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-border-color{border-color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-border-color{border-color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-border-color{border-color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-border-color{border-color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-border-color{border-color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-border-color{border-color: var(--wp--preset--color--vivid-purple) !important;}.has-vivid-cyan-blue-to-vivid-purple-gradient-background{background: var(--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple) !important;}.has-light-green-cyan-to-vivid-green-cyan-gradient-background{background: var(--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan) !important;}.has-luminous-vivid-amber-to-luminous-vivid-orange-gradient-background{background: var(--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange) !important;}.has-luminous-vivid-orange-to-vivid-red-gradient-background{background: var(--wp--preset--gradient--luminous-vivid-orange-to-vivid-red) !important;}.has-very-light-gray-to-cyan-bluish-gray-gradient-background{background: var(--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray) !important;}.has-cool-to-warm-spectrum-gradient-background{background: var(--wp--preset--gradient--cool-to-warm-spectrum) !important;}.has-blush-light-purple-gradient-background{background: var(--wp--preset--gradient--blush-light-purple) !important;}.has-blush-bordeaux-gradient-background{background: var(--wp--preset--gradient--blush-bordeaux) !important;}.has-luminous-dusk-gradient-background{background: var(--wp--preset--gradient--luminous-dusk) !important;}.has-pale-ocean-gradient-background{background: var(--wp--preset--gradient--pale-ocean) !important;}.has-electric-grass-gradient-background{background: var(--wp--preset--gradient--electric-grass) !important;}.has-midnight-gradient-background{background: var(--wp--preset--gradient--midnight) !important;}.has-small-font-size{font-size: var(--wp--preset--font-size--small) !important;}.has-medium-font-size{font-size: var(--wp--preset--font-size--medium) !important;}.has-large-font-size{font-size: var(--wp--preset--font-size--large) !important;}.has-x-large-font-size{font-size: var(--wp--preset--font-size--x-large) !important;}
+</style>
+<link rel='stylesheet' id='uag-style-37661-css'  href='https://dinocloud.co/wp-content/uploads/uag-plugin/uag-css-37661-1699375152.css?ver=1.25.6' type='text/css' media='all' />
+<link rel="https://api.w.org/" href="https://dinocloud.co/es/wp-json/" /><link rel="alternate" type="application/json" href="https://dinocloud.co/es/wp-json/wp/v2/landing/37661" /><link rel="EditURI" type="application/rsd+xml" title="RSD" href="https://dinocloud.co/xmlrpc.php?rsd" />
+<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="https://dinocloud.co/wp-includes/wlwmanifest.xml" /> 
+<meta name="generator" content="WordPress 6.0.6" />
+<link rel='shortlink' href='https://dinocloud.co/es/?p=37661' />
+<link rel="alternate" type="application/json+oembed" href="https://dinocloud.co/es/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fdinocloud.co%2Fes%2Ftu-partner-tecnologico-ideal%2F" />
+<link rel="alternate" type="text/xml+oembed" href="https://dinocloud.co/es/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fdinocloud.co%2Fes%2Ftu-partner-tecnologico-ideal%2F&#038;format=xml" />
+<meta name="generator" content="WPML ver:4.5.14 stt:1,2;" />
+<!-- HFCM by 99 Robots - Snippet # 3: No external links - Landings -->
+<style type="text/css" media="all">
+.bg_hero { display:none; }
+/*	.primary-menu-wrapper {display:none} */
+	#bottom-footer {display:none}
+.navbar-brand { 
+pointer-events: none;
+cursor: default;
+} 
+	
+.primary-menu > li:nth-last-child(3) {
+    border: none;
+	}
+	
+.primary-menu > li:nth-last-child(3) > a {
+    color: #002604;
+	}
+	
+.primary-menu > li:first-child > a {
+    color: #00AF66;
+	}
+	
+.primary-menu > li:first-child {
+    border: 2px solid #00AF66;
+    padding: 3px 10px;
+    border-radius: 20px;
+	}
+
+html {
+	scroll-behavior: smooth;
+	}
+</style>
+
+
+<!-- /end HFCM by 99 Robots -->
+<!-- HFCM by 99 Robots - Snippet # 4: HotJar - Sitewide -->
+<!-- Hotjar Tracking Code for my site -->
+<script>
+    (function(h,o,t,j,a,r){
+        h.hj=h.hj||function(){(h.hj.q=h.hj.q||[]).push(arguments)};
+        h._hjSettings={hjid:3175324,hjsv:6};
+        a=o.getElementsByTagName('head')[0];
+        r=o.createElement('script');r.async=1;
+        r.src=t+h._hjSettings.hjid+j+h._hjSettings.hjsv;
+        a.appendChild(r);
+    })(window,document,'https://static.hotjar.com/c/hotjar-','.js?sv=');
+</script>
+<!-- /end HFCM by 99 Robots -->
+<!-- HFCM by 99 Robots - Snippet # 12: General CSS -->
+<link href="https://fonts.googleapis.com/css?family=Montserrat:100,200,300,400,500,600,700" rel="stylesheet">
+
+<style>
+	.category-pill strong{
+	background: #CBE0F7;
+	padding: 6px 15px;
+	border-radius: 5px;
+}
+
+	.header-inner-section {
+
+		max-width: 900px !important
+		
+	}
+/* Featured Text Box */
+	
+	.featured-text-box {
+		background: #E5E8EA;
+    border-left: #00AF66 solid 4px;
+	}
+
+	.featured-text-box p{
+		line-height: 30px;
+	}
+/* Lista Chevron */
+	.chevron-list li {
+  display: flex;
+  align-items: center;
+  padding: .5rem 0;
+}
+
+.chevron-list li::before {
+  content: url('/wp-content/uploads/greenchevron.svg');
+  margin-right: .8rem;
+	width: 1rem;
+  height: 1rem;
+}
+
+/* cards success cases */	
+	.success-cases-lists .advgb-post-title > a {
+		color: #333333;
+		text-decoration: none
+	}
+	.success-cases-lists .advgb-post-title > a:hover {
+		color: #00af66;
+	}
+	
+	.success-cases-lists .advgb-recent-post {
+		box-shadow:none 
+	}
+	.success-cases-lists .advgb-post-readmore > a{
+		text-transform: uppercase;
+    border: 2px solid #00af66;
+    padding: 7px 25px;
+    font-weight: 600;
+	}
+	.success-cases-lists .advgb-post-readmore > a:hover{
+		background: #00af66;
+    color: white;
+    text-decoration: none;
+	}
+	.advgb-post-excerpt {
+		padding-bottom: 45px
+	}
+	    
+</style>
+
+
+<!-- /end HFCM by 99 Robots -->
+			<!-- DO NOT COPY THIS SNIPPET! Start of Page Analytics Tracking for HubSpot WordPress plugin v8.16.28-->
+			<script type="text/javascript" class="hsq-set-content-id" data-content-id="blog-post">
+				var _hsq = _hsq || [];
+				_hsq.push(["setContentType", "blog-post"]);
+			</script>
+			<!-- DO NOT COPY THIS SNIPPET! End of Page Analytics Tracking for HubSpot WordPress plugin -->
+			
+<link rel="preload" as="font" href="https://dinocloud.co/wp-content/themes/Dinocloud/assets/fonts/montserrat-v14-latin-700.woff2" crossorigin>
+<link rel="preload" as="font" href="https://dinocloud.co/wp-content/themes/Dinocloud/assets/fonts/source-sans-pro-v13-latin-regular.woff2" crossorigin>	<script>document.documentElement.className = document.documentElement.className.replace( 'no-js', 'js' );</script>
+	<meta name="generator" content="Powered by Slider Revolution 6.6.11 - responsive, Mobile-Friendly Slider Plugin for WordPress with comfortable drag and drop interface." />
+<style id="uagb-style-conditional-extension">@media (min-width: 1025px){body .uag-hide-desktop.uagb-google-map__wrap,body .uag-hide-desktop{display:none}}@media (min-width: 768px) and (max-width: 1024px){body .uag-hide-tab.uagb-google-map__wrap,body .uag-hide-tab{display:none}}@media (max-width: 767px){body .uag-hide-mob.uagb-google-map__wrap,body .uag-hide-mob{display:none}}</style><script>function setREVStartSize(e){
+			//window.requestAnimationFrame(function() {
+				window.RSIW = window.RSIW===undefined ? window.innerWidth : window.RSIW;
+				window.RSIH = window.RSIH===undefined ? window.innerHeight : window.RSIH;
+				try {
+					var pw = document.getElementById(e.c).parentNode.offsetWidth,
+						newh;
+					pw = pw===0 || isNaN(pw) || (e.l=="fullwidth" || e.layout=="fullwidth") ? window.RSIW : pw;
+					e.tabw = e.tabw===undefined ? 0 : parseInt(e.tabw);
+					e.thumbw = e.thumbw===undefined ? 0 : parseInt(e.thumbw);
+					e.tabh = e.tabh===undefined ? 0 : parseInt(e.tabh);
+					e.thumbh = e.thumbh===undefined ? 0 : parseInt(e.thumbh);
+					e.tabhide = e.tabhide===undefined ? 0 : parseInt(e.tabhide);
+					e.thumbhide = e.thumbhide===undefined ? 0 : parseInt(e.thumbhide);
+					e.mh = e.mh===undefined || e.mh=="" || e.mh==="auto" ? 0 : parseInt(e.mh,0);
+					if(e.layout==="fullscreen" || e.l==="fullscreen")
+						newh = Math.max(e.mh,window.RSIH);
+					else{
+						e.gw = Array.isArray(e.gw) ? e.gw : [e.gw];
+						for (var i in e.rl) if (e.gw[i]===undefined || e.gw[i]===0) e.gw[i] = e.gw[i-1];
+						e.gh = e.el===undefined || e.el==="" || (Array.isArray(e.el) && e.el.length==0)? e.gh : e.el;
+						e.gh = Array.isArray(e.gh) ? e.gh : [e.gh];
+						for (var i in e.rl) if (e.gh[i]===undefined || e.gh[i]===0) e.gh[i] = e.gh[i-1];
+											
+						var nl = new Array(e.rl.length),
+							ix = 0,
+							sl;
+						e.tabw = e.tabhide>=pw ? 0 : e.tabw;
+						e.thumbw = e.thumbhide>=pw ? 0 : e.thumbw;
+						e.tabh = e.tabhide>=pw ? 0 : e.tabh;
+						e.thumbh = e.thumbhide>=pw ? 0 : e.thumbh;
+						for (var i in e.rl) nl[i] = e.rl[i]<window.RSIW ? 0 : e.rl[i];
+						sl = nl[0];
+						for (var i in nl) if (sl>nl[i] && nl[i]>0) { sl = nl[i]; ix=i;}
+						var m = pw>(e.gw[ix]+e.tabw+e.thumbw) ? 1 : (pw-(e.tabw+e.thumbw)) / (e.gw[ix]);
+						newh =  (e.gh[ix] * m) + (e.tabh + e.thumbh);
+					}
+					var el = document.getElementById(e.c);
+					if (el!==null && el) el.style.height = newh+"px";
+					el = document.getElementById(e.c+"_wrapper");
+					if (el!==null && el) {
+						el.style.height = newh+"px";
+						el.style.display = "block";
+					}
+				} catch(e){
+					console.log("Failure at Presize of Slider:" + e)
+				}
+			//});
+		  };</script>
+	<!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-WW5DTR9');</script>
+<!-- End Google Tag Manager -->
+	
+	
+	
+	<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-81866423-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-81866423-1');
+</script>
+	
+
+</head>
+<body>
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-WW5DTR9"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+<section id="header">
+<div class="container">
+        <header id="site-header" role="banner">
+            <div class="header-inner section-inner">
+                <div class="header-titles-wrapper">
+                                                    <div class="header-titles"><a class="navbar-brand" href="/es">
+                                       <img src="https://dinocloud.co/wp-content/themes/Dinocloud/logo-dinocloud.svg" width="180" height="40" alt="Dinocloud"/>
+                    </a>
+                    </div>
+                    <!-- .header-titles -->
+
+                    <button class="toggle nav-toggle mobile-nav-toggle" data-toggle-target=".menu-modal"
+                            data-toggle-body-class="showing-menu-modal" aria-expanded="false"
+                            data-set-focus=".close-nav-toggle"> <span class="toggle-inner"
+                                                                      style="padding-top: 0px;"> <span
+                                    class="toggle-icon" style="height: auto;">
+<img src="https://dinocloud.co/wp-content/themes/Dinocloud/assets/images/icon-bars.svg" width="25" height="30" alt="Dinocloud"
+     style="padding: 0;margin: auto;"/>
+</span> </span></button>
+                    <!-- .nav-toggle -->
+
+                </div>
+                <!-- .header-titles-wrapper -->
+
+                <div class="header-navigation-wrapper">
+                                            <nav class="primary-menu-wrapper" aria-label="Horizontal" role="navigation">
+                            <ul class="primary-menu reset-list-style">
+                                <li id="menu-item-37681" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-37681"><a href="#contact">Contáctanos</a></li>
+<li id="menu-item-37682" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-37682"><a href="#solutions">Soluciones</a></li>
+<li id="menu-item-37683" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-37683"><a href="#clients">Clientes</a></li>
+<li id="menu-item-37684" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-37684"><a href="#aws-programs">Programas de AWS</a></li>
+<li id="menu-item-37685" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-37685"><a href="#capabilities">Competencias</a></li>
+                            </ul>
+                        </nav>
+                        <!-- .primary-menu-wrapper -->
+
+                                        </div>
+                <!-- .header-navigation-wrapper -->
+
+            </div>
+            <!-- .header-inner -->
+        </header>
+        <!-- #site-header -->
+</div>
+</section>
+
+<div class="menu-modal cover-modal header-footer-group" data-modal-target-string=".menu-modal">
+
+	<div class="menu-modal-inner modal-inner">
+
+		<div class="menu-wrapper section-inner">
+
+			<div class="menu-top">
+
+				<button class="toggle close-nav-toggle fill-children-current-color" data-toggle-target=".menu-modal" data-toggle-body-class="showing-menu-modal" aria-expanded="false" data-set-focus=".menu-modal">
+					<span class="toggle-text">Close Menu</span>
+					<svg class="svg-icon" aria-hidden="true" role="img" focusable="false" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16"><polygon fill="" fill-rule="evenodd" points="6.852 7.649 .399 1.195 1.445 .149 7.899 6.602 14.352 .149 15.399 1.195 8.945 7.649 15.399 14.102 14.352 15.149 7.899 8.695 1.445 15.149 .399 14.102" /></svg>				</button><!-- .nav-toggle -->
+
+				
+					<nav class="mobile-menu" aria-label="Mobile" role="navigation">
+
+						<ul class="modal-menu reset-list-style">
+
+						<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-37681"><div class="ancestor-wrapper"><a href="#contact">Contáctanos</a></div><!-- .ancestor-wrapper --></li>
+<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-37682"><div class="ancestor-wrapper"><a href="#solutions">Soluciones</a></div><!-- .ancestor-wrapper --></li>
+<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-37683"><div class="ancestor-wrapper"><a href="#clients">Clientes</a></div><!-- .ancestor-wrapper --></li>
+<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-37684"><div class="ancestor-wrapper"><a href="#aws-programs">Programas de AWS</a></div><!-- .ancestor-wrapper --></li>
+<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-37685"><div class="ancestor-wrapper"><a href="#capabilities">Competencias</a></div><!-- .ancestor-wrapper --></li>
+
+						</ul>
+
+					</nav>
+
+					
+			</div><!-- .menu-top -->
+
+			<div class="menu-bottom">
+
+				
+			</div><!-- .menu-bottom -->
+
+		</div><!-- .menu-wrapper -->
+
+	</div><!-- .menu-modal-inner -->
+
+</div><!-- .menu-modal -->
+	
+	</div></section>
+		
+
+		
+		</body>    <header class="bg_hero">
+        <picture>
+            <div class="div-banner"></div>
+        </picture>
+        <div class="row-content">
+                            <h1><span>Your Ideal Tech Partner</span></h1>
+                                    
+        </div>
+    </header>
+    
+<section class="wp-block-uagb-section uagb-section__wrap uagb-section__background-image uagb-block-b5f50ca0" id="contact"><div class="uagb-section__overlay"></div><div class="uagb-section__inner-wrap">
+<div style="height:25px" aria-hidden="true" class="wp-block-spacer"></div>
+
+
+
+<div style="height:25px" aria-hidden="true" class="wp-block-spacer"></div>
+
+
+
+<div style="height:25px" aria-hidden="true" class="wp-block-spacer"></div>
+
+
+
+<div class="wp-container-3 wp-block-columns">
+<div class="wp-container-1 wp-block-column" style="flex-basis:50%">
+<h1 class="has-white-color has-text-color">Consultoría en AWS, Modernización y desarrollo de aplicaciones en la nube</h1>
+
+
+
+<p class="has-white-color has-text-color has-medium-font-size">Somos #YourIdealTechPartner</p>
+
+
+
+<p class="has-white-color has-text-color has-medium-font-size">Libera todo el potencial de la nube junto con un Partner Premier de AWS.</p>
+
+
+
+<div style="height:40px" aria-hidden="true" class="wp-block-spacer"></div>
+
+
+
+<figure class="wp-block-image size-large is-resized"><img src="https://dinocloud.co/wp-content/uploads/badgesCompetenciesWhite.svg" alt="AWS Badges and Competencies DinoCloud" class="wp-image-37589" width="645"/></figure>
+</div>
+
+
+
+<div class="wp-container-2 wp-block-column" style="flex-basis:50%">
+<section class="wp-block-uagb-section uagb-section__wrap uagb-section__background-undefined uagb-block-b35f6f52 submit-btn-white" id="responsive-form"><div class="uagb-section__overlay"></div><div class="uagb-section__inner-wrap">
+<p class="has-white-color has-text-color">(*) Campos requeridos</p>
+
+
+
+<script charset="utf-8" type="text/javascript" src="//js.hsforms.net/forms/embed/v2.js"></script>
+<script>
+  hbspt.forms.create({
+    region: "na1",
+    portalId: "21668846",
+    formId: "21822e34-3c45-467c-aef8-a55e5eb1864b"
+  });
+</script>
+</div></section>
+</div>
+</div>
+</div></section>
+
+
+
+<section class="wp-block-uagb-section uagb-section__wrap uagb-section__background-undefined uagb-block-0f308fcc" id="clients"><div class="uagb-section__overlay"></div><div class="uagb-section__inner-wrap"><div class='white' style='background:rgba(0,0,0,0); border:solid 9px rgba(0,0,0,0); border-radius:19px; padding:0px 26px 0px 0px;'>
+<div id='slider_29566' class='owl-carousel sa_owl_theme owl-pagination-true autohide-arrows' data-slider-id='slider_29566' style='visibility:hidden;'>
+<div id='slider_29566_slide01' class='sa_hover_container sa_vert_center_wrap' style='padding:5% 13%; margin:0px 0%; background-image:url(&quot;https://dinocloud.co/wp-content/uploads/Logos-vectorizados_mir-Scientific.svg&quot;); background-position:left top; background-size:contain; background-repeat:no-repeat; '><div class='sa_vert_center'></div></div>
+<div id='slider_29566_slide02' class='sa_hover_container sa_vert_center_wrap' style='padding:5% 13%; margin:0px 0%; background-image:url(&quot;https://dinocloud.co/wp-content/uploads/Logos-vectorizados_Betwarrior.svg&quot;); background-position:left top; background-size:contain; background-repeat:no-repeat; '><div class='sa_vert_center'></div></div>
+<div id='slider_29566_slide03' class='sa_hover_container sa_vert_center_wrap' style='padding:5% 13%; margin:0px 0%; background-image:url(&quot;https://dinocloud.co/wp-content/uploads/Logos-vectorizados_Naranja-x.svg&quot;); background-position:left top; background-size:contain; background-repeat:no-repeat; '><div class='sa_vert_center'></div></div>
+<div id='slider_29566_slide04' class='sa_hover_container sa_vert_center_wrap' style='padding:5% 13%; margin:0px 0%; background-image:url(&quot;https://dinocloud.co/wp-content/uploads/Logos-vectorizados_Jampp.svg&quot;); background-position:left top; background-size:contain; background-repeat:no-repeat; '><div class='sa_vert_center'></div></div>
+<div id='slider_29566_slide05' class='sa_hover_container sa_vert_center_wrap' style='padding:5% 13%; margin:0px 0%; background-image:url(&quot;https://dinocloud.co/wp-content/uploads/Logos-vectorizados_Urbano.svg&quot;); background-position:left top; background-size:contain; background-repeat:no-repeat; '><div class='sa_vert_center'></div></div>
+<div id='slider_29566_slide06' class='sa_hover_container sa_vert_center_wrap' style='padding:5% 13%; margin:0px 0%; background-image:url(&quot;https://dinocloud.co/wp-content/uploads/Logos-vectorizados_Increase-Card.svg&quot;); background-position:left top; background-size:contain; background-repeat:no-repeat; '><div class='sa_vert_center'></div></div>
+<div id='slider_29566_slide07' class='sa_hover_container sa_vert_center_wrap' style='padding:5% 13%; margin:0px 0%; background-image:url(&quot;https://dinocloud.co/wp-content/uploads/Logos-vectorizados_Inswitch.svg&quot;); background-position:left top; background-size:contain; background-repeat:no-repeat; '><div class='sa_vert_center'></div></div>
+<div id='slider_29566_slide08' class='sa_hover_container sa_vert_center_wrap' style='padding:5% 13%; margin:0px 0%; background-image:url(&quot;https://dinocloud.co/wp-content/uploads/Logos-vectorizados_Medaxion.svg&quot;); background-position:left top; background-size:contain; background-repeat:no-repeat; '><div class='sa_vert_center'></div></div>
+</div>
+</div>
+<script type='text/javascript'>
+	document.addEventListener('DOMContentLoaded', function() {
+		jQuery('#slider_29566').owlCarousel({
+			responsive:{
+				0:{ items:2 },
+				480:{ items:4 },
+				768:{ items:6 },
+				980:{ items:6 },
+				1200:{ items:6 },
+				1500:{ items:6 }
+			},
+			autoplay : true,
+			autoplayTimeout : 5000,
+			autoplayHoverPause : false,
+			smartSpeed : 200,
+			fluidSpeed : 200,
+			autoplaySpeed : 200,
+			navSpeed : 200,
+			dotsSpeed : 200,
+			loop : true,
+			nav : false,
+			navText : ['Previous','Next'],
+			dots : true,
+			responsiveRefreshRate : 200,
+			slideBy : 1,
+			mergeFit : true,
+			autoHeight : false,
+			mouseDrag : false,
+			touchDrag : false
+		});
+		jQuery('#slider_29566').css('visibility', 'visible');
+		sa_resize_slider_29566();
+		window.addEventListener('resize', sa_resize_slider_29566);
+		function sa_resize_slider_29566() {
+			var min_height = '73';
+			var win_width = jQuery(window).width();
+			var slider_width = jQuery('#slider_29566').width();
+			if (win_width < 480) {
+				var slide_width = slider_width / 2;
+			} else if (win_width < 768) {
+				var slide_width = slider_width / 4;
+			} else if (win_width < 980) {
+				var slide_width = slider_width / 6;
+			} else if (win_width < 1200) {
+				var slide_width = slider_width / 6;
+			} else if (win_width < 1500) {
+				var slide_width = slider_width / 6;
+			} else {
+				var slide_width = slider_width / 6;
+			}
+			slide_width = Math.round(slide_width);
+			var slide_height = '0';
+			if (min_height == 'aspect43') {
+				slide_height = (slide_width / 4) * 3;				slide_height = Math.round(slide_height);
+			} else if (min_height == 'aspect169') {
+				slide_height = (slide_width / 16) * 9;				slide_height = Math.round(slide_height);
+			} else {
+				slide_height = (slide_width / 100) * min_height;				slide_height = Math.round(slide_height);
+			}
+			jQuery('#slider_29566 .owl-item .sa_hover_container').css('min-height', slide_height+'px');
+		}
+		var owl_goto = jQuery('#slider_29566');
+		jQuery('.slider_29566_goto1').click(function(event){
+			owl_goto.trigger('to.owl.carousel', 0);
+		});
+		jQuery('.slider_29566_goto2').click(function(event){
+			owl_goto.trigger('to.owl.carousel', 1);
+		});
+		jQuery('.slider_29566_goto3').click(function(event){
+			owl_goto.trigger('to.owl.carousel', 2);
+		});
+		jQuery('.slider_29566_goto4').click(function(event){
+			owl_goto.trigger('to.owl.carousel', 3);
+		});
+		jQuery('.slider_29566_goto5').click(function(event){
+			owl_goto.trigger('to.owl.carousel', 4);
+		});
+		jQuery('.slider_29566_goto6').click(function(event){
+			owl_goto.trigger('to.owl.carousel', 5);
+		});
+		jQuery('.slider_29566_goto7').click(function(event){
+			owl_goto.trigger('to.owl.carousel', 6);
+		});
+		jQuery('.slider_29566_goto8').click(function(event){
+			owl_goto.trigger('to.owl.carousel', 7);
+		});
+		var resize_31291 = jQuery('.owl-carousel');
+		resize_31291.on('initialized.owl.carousel', function(e) {
+			if (typeof(Event) === 'function') {
+				window.dispatchEvent(new Event('resize'));
+			} else {
+				var evt = window.document.createEvent('UIEvents');
+				evt.initUIEvent('resize', true, false, window, 0);
+				window.dispatchEvent(evt);
+			}
+		});
+	});
+</script>
+
+
+
+
+<div style="height:30px" aria-hidden="true" class="wp-block-spacer"></div>
+</div></section>
+
+
+
+<section class="wp-block-uagb-section uagb-section__wrap uagb-section__background-color uagb-block-6b23d1a1" id="solutions"><div class="uagb-section__overlay"></div><div class="uagb-section__inner-wrap">
+<div style="height:100px" aria-hidden="true" class="wp-block-spacer"></div>
+
+
+
+<div class="wp-block-uagb-advanced-heading uagb-block-55f639a1" id="solutions"><h2 class="uagb-heading-text">Soluciones</h2><div class="uagb-separator-wrap"><div class="uagb-separator"></div></div><p class="uagb-desc-text"></p></div>
+
+
+
+<div style="height:30px" aria-hidden="true" class="wp-block-spacer"></div>
+
+
+
+<div class="wp-container-7 wp-block-columns">
+<div class="wp-container-4 wp-block-column">
+<div class="wp-block-uagb-section uagb-section__wrap uagb-section__background-undefined uagb-block-77af425b box-shadow"><div class="uagb-section__overlay"></div><div class="uagb-section__inner-wrap">
+<div style="height:20px" aria-hidden="true" class="wp-block-spacer"></div>
+
+
+
+<figure class="wp-block-image size-large is-resized"><img src="https://dinocloud.co/wp-content/uploads/securityServices1.svg" alt="" class="wp-image-37573" width="95"/></figure>
+
+
+
+<h4 class="has-text-align-left" id="h-migracion-a-la-nube">Migración a la nube</h4>
+
+
+
+<p class="line-height-normal has-text-color" style="color:#626262">Como compañía cloud native y partner clave de los principales proveedores mundiales de la nube, analizamos, planificamos y ejecutamos una hoja de ruta diseñada para que te familiarices con estas nuevas tecnologías. Trabajaremos junto a tu equipo para definir una hoja de ruta que incluya mejoras en tus costos operativos, la productividad, la mitigación de riesgos y en una resiliencia operativa totalmente renovada.</p>
+</div></div>
+</div>
+
+
+
+<div class="wp-container-5 wp-block-column">
+<div class="wp-block-uagb-section uagb-section__wrap uagb-section__background-undefined uagb-block-3672a939 box-shadow"><div class="uagb-section__overlay"></div><div class="uagb-section__inner-wrap">
+<div style="height:20px" aria-hidden="true" class="wp-block-spacer"></div>
+
+
+
+<figure class="wp-block-image size-large is-resized"><img src="https://dinocloud.co/wp-content/uploads/appModernizationIcon1.svg" alt="" class="wp-image-37565" width="95" height="113"/></figure>
+
+
+
+<h4 class="has-text-align-left" id="h-modernizacion-de-aplicaciones">Modernización de aplicaciones</h4>
+
+
+
+<p class="line-height-normal has-text-color" style="color:#626262">Moderniza tus sistemas con tecnologías basadas en la nube. Actualiza tus aplicaciones monolíticas hacia una arquitectura de microservicios. Aprovecha la infraestructura como código, los contenedores y las arquitecturas serverless para acelerar tu ciclo de desarrollo y despliegue, lo que se traduce en aplicaciones escalables de forma segura y con costos optimizados.</p>
+</div></div>
+</div>
+
+
+
+<div class="wp-container-6 wp-block-column">
+<section class="wp-block-uagb-section uagb-section__wrap uagb-section__background-undefined uagb-block-7c1ef100 box-shadow"><div class="uagb-section__overlay"></div><div class="uagb-section__inner-wrap">
+<div style="height:20px" aria-hidden="true" class="wp-block-spacer"></div>
+
+
+
+<figure class="wp-block-image size-large is-resized"><img src="https://dinocloud.co/wp-content/uploads/cloudMigrationIcon1.svg" alt="" class="wp-image-37572" width="95"/></figure>
+
+
+
+<h4 class="has-text-align-left" id="h-servicios-de-seguridad">Servicios de seguridad</h4>
+
+
+
+<p class="line-height-normal has-text-color" style="color:#626262">Desbloquea nuevas soluciones de seguridad para tu compañía, con monitoreo constante las 24 horas del día y optimización de costos. Protege tu infraestructura con nuestros servicios de seguridad en la nube de vanguardia. Nuestro equipo de expertos colaborará estrechamente contigo para diseñar y aplicar un plan de seguridad integral que garantice la seguridad e integridad de tus datos y sistemas.</p>
+</div></section>
+</div>
+</div>
+
+
+
+<div class="wp-container-16 wp-block-columns">
+<div class="wp-container-11 wp-block-column is-vertically-aligned-center">
+<section class="wp-block-uagb-section uagb-section__wrap uagb-section__background-undefined uagb-block-0885d2c2 box-shadow"><div class="uagb-section__overlay"></div><div class="uagb-section__inner-wrap">
+<div class="wp-container-10 wp-block-columns are-vertically-aligned-center margin-bottom-0">
+<div class="wp-container-8 wp-block-column is-vertically-aligned-center" style="flex-basis:150px"><div class="wp-block-image">
+<figure class="aligncenter size-large is-resized"><img src="https://dinocloud.co/wp-content/uploads/Iconos-4-53.svg" alt="DevOps icon" class="wp-image-37602" width="156"/></figure></div></div>
+
+
+
+<div class="wp-container-9 wp-block-column is-vertically-aligned-center" style="flex-basis:66.66%">
+<h6 class="no-margin has-medium-font-size" id="h-servicios-de-devops"><strong>Servicios de DevOps</strong></h6>
+
+
+
+<p class="line-height-normal">Ayudamos a tu equipo a adoptar e implementar herramientas de automatización de DevOps y prácticas de CI/CD a lo largo de la evolución de tu proyecto para mitigar riesgos, eliminar redundancias y desarrollar softwares de mayor calidad más rápidamente.&nbsp;</p>
+</div>
+</div>
+</div></section>
+</div>
+
+
+
+<div class="wp-container-15 wp-block-column">
+<section class="wp-block-uagb-section uagb-section__wrap uagb-section__background-undefined uagb-block-aaf1a92d box-shadow"><div class="uagb-section__overlay"></div><div class="uagb-section__inner-wrap">
+<div class="wp-container-14 wp-block-columns are-vertically-aligned-center margin-bottom-0">
+<div class="wp-container-12 wp-block-column is-vertically-aligned-center" style="flex-basis:33.3%"><div class="wp-block-image">
+<figure class="aligncenter size-large is-resized"><img src="https://dinocloud.co/wp-content/uploads/Iconos-4-54.svg" alt="Cost Optimization" class="wp-image-37603" width="156"/></figure></div></div>
+
+
+
+<div class="wp-container-13 wp-block-column is-vertically-aligned-center" style="flex-basis:66.66%">
+<h6 class="no-margin has-medium-font-size" id="h-optimizacion-de-costos-en-la-nube"><strong>Optimización de costos en la nube</strong></h6>
+
+
+
+<p class="line-height-normal">Maximiza los resultados de tu compañía con sistemas orientados a la optimización de costos que maximizan la efectividad de los recursos con gastos mínimos.&nbsp;</p>
+</div>
+</div>
+</div></section>
+</div>
+</div>
+
+
+
+<div class="wp-container-25 wp-block-columns">
+<div class="wp-container-20 wp-block-column is-vertically-aligned-center">
+<section class="wp-block-uagb-section uagb-section__wrap uagb-section__background-undefined uagb-block-b0b6d60b box-shadow"><div class="uagb-section__overlay"></div><div class="uagb-section__inner-wrap">
+<div class="wp-container-19 wp-block-columns are-vertically-aligned-center margin-bottom-0">
+<div class="wp-container-17 wp-block-column is-vertically-aligned-center" style="flex-basis:150px"><div class="wp-block-image">
+<figure class="aligncenter size-large is-resized"><img src="https://dinocloud.co/wp-content/uploads/Iconos-4-55.svg" alt="AWS Consulting" class="wp-image-37604" width="156"/></figure></div></div>
+
+
+
+<div class="wp-container-18 wp-block-column is-vertically-aligned-center" style="flex-basis:66.66%">
+<h6 class="no-margin has-medium-font-size" id="h-consultoria-de-aws"><strong>Consultoría de AWS</strong></h6>
+
+
+
+<p class="line-height-normal">Crea, migra y optimiza tus productos en AWS. Mejora la eficiencia de la infraestructura y el control de costos con una infraestructura de sistemas escalable, fiable y de alta disponibilidad con un Partner Premier de AWS.</p>
+</div>
+</div>
+</div></section>
+</div>
+
+
+
+<div class="wp-container-24 wp-block-column">
+<section class="wp-block-uagb-section uagb-section__wrap uagb-section__background-undefined uagb-block-90e2b57d box-shadow"><div class="uagb-section__overlay"></div><div class="uagb-section__inner-wrap">
+<div class="wp-container-23 wp-block-columns are-vertically-aligned-center margin-bottom-0">
+<div class="wp-container-21 wp-block-column is-vertically-aligned-center" style="flex-basis:33.3%"><div class="wp-block-image">
+<figure class="aligncenter size-large is-resized"><img src="https://dinocloud.co/wp-content/uploads/Iconos-4-56.svg" alt="Cloud Managed Services" class="wp-image-37605" width="156"/></figure></div></div>
+
+
+
+<div class="wp-container-22 wp-block-column is-vertically-aligned-center" style="flex-basis:66.66%">
+<h6 class="no-margin has-medium-font-size" id="h-aws-managed-services"><strong>AWS Managed Services</strong></h6>
+
+
+
+<p class="line-height-normal">Garantizamos que tu entorno de AWS satisfaga las necesidades de tu negocio, mediante la gestión, automatización y monitorización de tu nube en un modelo de Soporte 24/7.</p>
+</div>
+</div>
+</div></section>
+</div>
+</div>
+
+
+
+<div style="height:60px" aria-hidden="true" class="wp-block-spacer"></div>
+</div></section>
+
+
+
+<section class="wp-block-uagb-section uagb-section__wrap uagb-section__background-color uagb-block-68103d39" id="aws-programs"><div class="uagb-section__overlay"></div><div class="uagb-section__inner-wrap">
+<div style="height:100px" aria-hidden="true" class="wp-block-spacer"></div>
+
+
+
+<div class="wp-block-uagb-advanced-heading uagb-block-fbeaef7b"><h2 class="uagb-heading-text">Programas de AWS</h2><div class="uagb-separator-wrap"><div class="uagb-separator"></div></div><p class="uagb-desc-text">Trabajando con un Partner Premier de AWS como DinoCloud, podés acceder a financiamiento para tus soluciones en la nube a través de los diversos programas que AWS ofrece para sus clientes.</p></div>
+
+
+
+<div style="height:30px" aria-hidden="true" class="wp-block-spacer"></div>
+
+
+
+<div class="wp-container-34 wp-block-columns">
+<div class="wp-container-29 wp-block-column is-vertically-aligned-center">
+<section class="wp-block-uagb-section uagb-section__wrap uagb-section__background-undefined uagb-block-49ab0a26 box-shadow"><div class="uagb-section__overlay"></div><div class="uagb-section__inner-wrap">
+<div class="wp-container-28 wp-block-columns are-vertically-aligned-center margin-bottom-0">
+<div class="wp-container-26 wp-block-column is-vertically-aligned-center" style="flex-basis:150px"><div class="wp-block-image">
+<figure class="aligncenter size-large is-resized"><img src="https://dinocloud.co/wp-content/uploads/migration.svg" alt="" class="wp-image-37648" width="135"/></figure></div></div>
+
+
+
+<div class="wp-container-27 wp-block-column is-vertically-aligned-center" style="flex-basis:66.66%">
+<h6 class="no-margin has-medium-font-size" id="h-migration-acceleration-program"><strong><strong><strong>Migration Acceleration Program</strong></strong></strong></h6>
+
+
+
+<p class="line-height-normal">El Migration Acceleration Program (MAP) de AWS es un programa de migración a la nube completo y probado basado en la experiencia de AWS de migrar miles de clientes empresariales a la nube.</p>
+</div>
+</div>
+</div></section>
+</div>
+
+
+
+<div class="wp-container-33 wp-block-column">
+<section class="wp-block-uagb-section uagb-section__wrap uagb-section__background-undefined uagb-block-627db3fe box-shadow"><div class="uagb-section__overlay"></div><div class="uagb-section__inner-wrap">
+<div class="wp-container-32 wp-block-columns are-vertically-aligned-center margin-bottom-0">
+<div class="wp-container-30 wp-block-column is-vertically-aligned-center" style="flex-basis:33.3%"><div class="wp-block-image">
+<figure class="aligncenter size-large is-resized"><img src="https://dinocloud.co/wp-content/uploads/waf.svg" alt="" class="wp-image-37650" width="135"/></figure></div></div>
+
+
+
+<div class="wp-container-31 wp-block-column is-vertically-aligned-center" style="flex-basis:66.66%">
+<h6 class="no-margin has-medium-font-size" id="h-well-architected-program"><strong><strong>Well-Architected Program</strong></strong></h6>
+
+
+
+<p class="line-height-normal">AWS Well-Architected ayuda a los arquitectos de la nube a crear infraestructuras seguras, de alto rendimiento, resistentes y eficientes para diversas aplicaciones y cargas de trabajo.</p>
+</div>
+</div>
+</div></section>
+</div>
+</div>
+
+
+
+<div class="wp-container-43 wp-block-columns">
+<div class="wp-container-38 wp-block-column is-vertically-aligned-center">
+<section class="wp-block-uagb-section uagb-section__wrap uagb-section__background-undefined uagb-block-924ea637 box-shadow"><div class="uagb-section__overlay"></div><div class="uagb-section__inner-wrap">
+<div class="wp-container-37 wp-block-columns are-vertically-aligned-center margin-bottom-0">
+<div class="wp-container-35 wp-block-column is-vertically-aligned-center" style="flex-basis:150px"><div class="wp-block-image">
+<figure class="aligncenter size-large is-resized"><img src="https://dinocloud.co/wp-content/uploads/jumpstart.svg" alt="" class="wp-image-37647" width="135"/></figure></div></div>
+
+
+
+<div class="wp-container-36 wp-block-column is-vertically-aligned-center" style="flex-basis:66.66%">
+<h6 class="no-margin has-medium-font-size" id="h-programa-jumpstart"><strong><strong>Programa Jumpstart</strong></strong></h6>
+
+
+
+<p class="line-height-normal">El programa Jumpstart tiene como objetivo ayudar a las startups que ven el valor de adoptar un servicio específico de AWS, pero tienen conocimientos técnicos o recursos limitados.</p>
+</div>
+</div>
+</div></section>
+</div>
+
+
+
+<div class="wp-container-42 wp-block-column">
+<section class="wp-block-uagb-section uagb-section__wrap uagb-section__background-undefined uagb-block-89becf3c box-shadow"><div class="uagb-section__overlay"></div><div class="uagb-section__inner-wrap">
+<div class="wp-container-41 wp-block-columns are-vertically-aligned-center margin-bottom-0">
+<div class="wp-container-39 wp-block-column is-vertically-aligned-center" style="flex-basis:33.3%"><div class="wp-block-image">
+<figure class="aligncenter size-large is-resized"><img src="https://dinocloud.co/wp-content/uploads/pocProgram.svg" alt="" class="wp-image-37649" width="135"/></figure></div></div>
+
+
+
+<div class="wp-container-40 wp-block-column is-vertically-aligned-center" style="flex-basis:66.66%">
+<h6 class="no-margin has-medium-font-size" id="h-poc-program"><strong>PoC Program</strong></h6>
+
+
+
+<p class="line-height-normal">El programa de PoC de AWS está diseñado para introducirte en nuevos e innovadores servicios de AWS con menor riesgo y un gasto mínimo.</p>
+</div>
+</div>
+</div></section>
+</div>
+</div>
+
+
+
+<div style="height:60px" aria-hidden="true" class="wp-block-spacer"></div>
+</div></section>
+
+
+
+<section class="wp-block-uagb-section uagb-section__wrap uagb-section__background-image uagb-block-1ef76369" id="capabilities"><div class="uagb-section__overlay"></div><div class="uagb-section__inner-wrap">
+<div style="height:100px" aria-hidden="true" class="wp-block-spacer"></div>
+
+
+
+<div class="wp-container-49 wp-block-columns">
+<div class="wp-container-47 wp-block-column">
+<div class="wp-block-uagb-advanced-heading uagb-block-4a038682" id="competencies"><h2 class="uagb-heading-text">Tu partner tecnológico ideal</h2><div class="uagb-separator-wrap"><div class="uagb-separator"></div></div><p class="uagb-desc-text"></p></div>
+
+
+
+<p>Contamos con la experiencia y las certificaciones necesarias para llevar a tu organización al siguiente nivel.</p>
+
+
+
+<div class="wp-container-46 wp-block-columns">
+<div class="wp-container-44 wp-block-column">
+<p><strong>Competencias de AWS</strong></p>
+
+
+
+<p class="info-aws"> <img class="size-full wp-image-34803 alignleft" role="img" src="https://dinocloud.co/wp-content/uploads/check-icon.svg" alt="" width="20" height="20" />Security Services Competency</p>
+<p class="info-aws"> <img class="size-full wp-image-34803 alignleft" role="img" src="https://dinocloud.co/wp-content/uploads/check-icon.svg" alt="" width="20" height="20" />DevOps Consulting Competency</p>
+<p class="info-aws"> <img class="size-full wp-image-34803 alignleft" role="img" src="https://dinocloud.co/wp-content/uploads/check-icon.svg" alt="" width="20" height="20" />Financial Services Consulting Competency </p>
+<p class="info-aws"> <img class="size-full wp-image-34803 alignleft" role="img" src="https://dinocloud.co/wp-content/uploads/check-icon.svg" alt="" width="20" height="20" />AWS Public Sector Partner</p>
+<p class="info-aws"> <img class="size-full wp-image-34803 alignleft" role="img" src="https://dinocloud.co/wp-content/uploads/check-icon.svg" alt="" width="20" height="20" />Security Services Competency</p>
+<p class="info-aws"> <img class="size-full wp-image-34803 alignleft" role="img" src="https://dinocloud.co/wp-content/uploads/check-icon.svg" alt="" width="20" height="20" />DevOps Consulting Competency</p>
+<p class="info-aws"> Migration Services Competency<img class="size-full wp-image-34803 alignleft" role="img" src="https://dinocloud.co/wp-content/uploads/check-icon.svg" alt="" width="20" height="20" /></p>
+<p> </p>
+</div>
+
+
+
+<div class="wp-container-45 wp-block-column">
+<p><strong>Programas y certificaciones de AWS</strong></p>
+
+
+
+<p class="info-aws">&nbsp;<img class="size-full wp-image-34803 alignleft" role="img" src="https://dinocloud.co/wp-content/uploads/check-icon.svg" alt="" width="20" height="20">Well-Architected™ Program</p>
+<p class="info-aws">&nbsp;<img class="size-full wp-image-34803 alignleft" role="img" src="https://dinocloud.co/wp-content/uploads/check-icon.svg" alt="" width="20" height="20">APN Immersion Days</p>
+<p class="info-aws">&nbsp;<img class="size-full wp-image-34803 alignleft" role="img" src="https://dinocloud.co/wp-content/uploads/check-icon.svg" alt="" width="20" height="20">Amazon EC2 for Windows Server Delivery</p>
+<p class="info-aws">&nbsp;<img class="size-full wp-image-34803 alignleft" role="img" src="https://dinocloud.co/wp-content/uploads/check-icon.svg" alt="" width="20" height="20">Authorized Commercial Reseller</p>
+</div>
+</div>
+</div>
+
+
+
+<div class="wp-container-48 wp-block-column" style="flex-basis:45%"><div class="wp-block-image">
+<figure class="alignright size-full is-resized"><picture class="wp-image-37596">
+<source type="image/webp" srcset="https://dinocloud.co/wp-content/uploads/DinoCLoudLandingBadges.png.webp"/>
+<img src="https://dinocloud.co/wp-content/uploads/DinoCLoudLandingBadges.png" alt="" width="494" height="435"/>
+</picture>
+</figure></div></div>
+</div>
+
+
+
+<div style="height:10px" aria-hidden="true" class="wp-block-spacer"></div>
+</div></section>
+
+
+
+<section class="wp-block-uagb-section uagb-section__wrap uagb-section__background-image uagb-block-127404be"><div class="uagb-section__overlay"></div><div class="uagb-section__inner-wrap">
+<div class="wp-container-58 wp-block-columns">
+<div class="wp-container-50 wp-block-column" style="flex-basis:10%"></div>
+
+
+
+<div class="wp-container-57 wp-block-column">
+<div class="wp-container-53 wp-block-columns">
+<div class="wp-container-51 wp-block-column" style="flex-basis:50%">
+<h3 class="has-white-color has-text-color" id="h-creemos-juntos-to-propia-historia-de-exito" style="font-size:30px">Creemos juntos to propia historia de éxito</h3>
+</div>
+
+
+
+<div class="wp-container-52 wp-block-column"></div>
+</div>
+
+
+
+<div class="wp-container-56 wp-block-columns are-vertically-aligned-center">
+<div class="wp-container-54 wp-block-column is-vertically-aligned-center" style="flex-basis:60%">
+<p class="has-white-color has-text-color" style="font-size:25px">Nuestro equipo tiene la expertise técnica y las certificaciones necesarias para guiarte en cada paso del camino.&nbsp;</p>
+</div>
+
+
+
+<div class="wp-container-55 wp-block-column is-vertically-aligned-center">
+<div class="wp-block-advgb-button alignnone"><a class="wp-block-advgb-button_link advgbbtn-947e181b-b9f7-42ae-94fe-908f13c60051" href="#contact" target="_self" rel="noopener noreferrer"><span><strong>CONTÁCTANOS</strong></span></a></div>
+</div>
+</div>
+</div>
+</div>
+</div></section>
+
+
+
+<section class="wp-block-uagb-section uagb-section__wrap uagb-section__background-image uagb-block-bd89a83e" id="contact"><div class="uagb-section__overlay"></div><div class="uagb-section__inner-wrap">
+<div style="height:50px" aria-hidden="true" class="wp-block-spacer"></div>
+
+
+
+<div class="wp-block-uagb-advanced-heading uagb-block-f1edf054"><h2 class="uagb-heading-text">Nuestras oficinas</h2><p class="uagb-desc-text"></p></div>
+
+
+
+<div class="wp-container-63 wp-block-columns are-vertically-aligned-center">
+<div class="wp-container-59 wp-block-column is-vertically-aligned-center border-left-green">
+<p class="display-flex-center">Miami &nbsp;<img class="alignnone  wp-image-36834" role="img" src="https://dinocloud.co/wp-content/uploads/twemoji_flag-united-states.svg" alt="" width="21" height="21"></p>
+</div>
+
+
+
+<div class="wp-container-60 wp-block-column is-vertically-aligned-center border-left-green">
+<p class="display-flex-center">New York &nbsp;<img class="alignnone  wp-image-36834" role="img" src="https://dinocloud.co/wp-content/uploads/twemoji_flag-united-states.svg" alt="" width="21" height="21"></p>
+</div>
+
+
+
+<div class="wp-container-61 wp-block-column is-vertically-aligned-center border-left-green">
+<p class="display-flex-center">Colombia &nbsp;<img class="alignnone  wp-image-36834" role="img" src="https://dinocloud.co/wp-content/uploads/twemoji_flag-colombia.svg" alt="" width="21" height="21"></p>
+</div>
+
+
+
+<div class="wp-container-62 wp-block-column is-vertically-aligned-center border-left-green">
+<p class="display-flex-center">Argentina &nbsp;<img class="alignnone  wp-image-36834" role="img" src="https://dinocloud.co/wp-content/uploads/twemoji_flag-argentina.svg" alt="" width="21" height="21"></p>
+</div>
+</div>
+
+
+
+<p class="has-text-align-center">© 2022, DinoCloud, Inc. All rights reserved.</p>
+</div></section>
+<style class="advgb-styles-renderer">.advgbbtn-947e181b-b9f7-42ae-94fe-908f13c60051{font-size:18px;color:#00884f !important;background-color:#ffffff !important;margin:0px 0px 0px 0px !important;padding:10px 30px 10px 30px;border-width:1px !important;border-style:none;border-radius:50px !important;}.advgbbtn-947e181b-b9f7-42ae-94fe-908f13c60051:hover{box-shadow:1px 1px 12px 0px #ccc;opacity:1;transition:all 0.2s ease;}.advgbbtn-947e181b-b9f7-42ae-94fe-908f13c60051 > i {display: none !important;}</style>    <style type="text/css">
+        .bg_hero {
+            background:none;
+            padding: 0;
+            height:auto;
+            min-height: 25vh;
+        }
+        .row-content {
+            position: absolute;
+            z-index: 1;
+            width: 100% !important;
+            max-width: 1240px;
+            left: 0;
+            right: 0;
+            margin: auto;
+            height: auto;
+        }
+        .bg_hero h1 {
+            font-size: 30px !important;
+            font-weight: 700 !important;
+            text-transform: none;
+            font-family: Montserrat;
+            color: #ffffff;
+            letter-spacing: .05em !important;
+            text-align: left;
+            padding: 4px 10px 4px 0;
+        }
+        h1 span {background-color: #00AF66;}
+        @media (max-width: 576px) {
+            .bg_hero {
+                background: none;
+                padding: 0;
+                height: auto;
+                min-height: 30vh;
+                overflow: hidden;
+            }
+            .row-content {
+                position: absolute;
+                z-index: 1;
+                width: 90% !important;
+                height: auto;
+                padding: 30px 0;
+            }
+            .bg_hero h1 {
+                font-size: 20px !important;
+            }
+        }
+                .div-banner { background: rgb(61,170,110);
+            background: linear-gradient(229deg, rgba(61,170,110,1) 14%, rgba(0,136,79,1) 46%, rgba(19,113,74,1) 77%, rgba(6,121,65,1) 89%, rgba(61,170,110,1) 100%);  background-size: cover;width: 100%; height: auto; min-height: 25vh;}
+                        @media (max-width: 576px) {
+            .div-banner { background: rgb(61,170,110);
+                background: linear-gradient(229deg, rgba(61,170,110,1) 14%, rgba(0,136,79,1) 46%, rgba(19,113,74,1) 77%, rgba(6,121,65,1) 89%, rgba(61,170,110,1) 100%);   background-size: cover;width: auto; height: auto; min-height: 30vh;}
+        }
+            </style>
+<section id="bottom-footer">
+    <div class="container page-footer">
+        <div class="wp-block-columns">
+            <div class="wp-block-column">
+                <div class="footer-logo">
+                                            <a class="navbar-brand" href="/es">
+                                                        <img src="https://dinocloud.co/wp-content/themes/Dinocloud/logo-dinocloud-light.svg" width="200"
+                                 height="44" alt="Dinocloud"/>
+                        </a>
+                </div>
+                <div class="textwidget custom-html-widget"><p>
+Somos líderes en materia de construcción, optimización y evolución de productos desplegados en el cloud.</p>
+<p>&nbsp</p></div><br>
+                <br>
+                <ul class="social-icons">
+                                            <li><a href="https://www.facebook.com/dinocloudcons" rel="noreferrer"
+                               target="_blank"><img
+                                        src="https://dinocloud.co/wp-content/themes/Dinocloud/assets/images/facebook-square-brands.svg" width="28" height="28" alt="Dinocloud"/></a></li>
+                        <li><a href="https://www.linkedin.com/company/dinocloud-latam/" rel="noreferrer"
+                               target="_blank"><img
+                                        src="https://dinocloud.co/wp-content/themes/Dinocloud/assets/images/linkedin-brands.svg" width="28" height="28" alt="Dinocloud"/></a></li>
+                        <li><a href="https://twitter.com/dinocloud_" rel="noreferrer" target="_blank"><img
+                                        src="https://dinocloud.co/wp-content/themes/Dinocloud/assets/images/twitter-square-brands.svg" width="28" height="28" alt="Dinocloud"/></a></li>
+                        <li><a href="https://www.instagram.com/dinocloud_" rel="noreferrer" target="_blank"><img
+                                        src="https://dinocloud.co/wp-content/themes/Dinocloud/assets/images/instagram-square-brands.svg" width="28" height="28" alt="Dinocloud"/></a></li>
+                        <li><a href="https://www.youtube.com/channel/UCYFraOippcCbr3C4R31JVxg" rel="noreferrer"
+                               target="_blank"><img
+                                        src="https://dinocloud.co/wp-content/themes/Dinocloud/assets/images/youtube-square-brands.svg" width="28" height="28" alt="Dinocloud"/></a></li>
+                                    </ul>
+
+            </div>
+            <div class="wp-block-column">
+                <h5>Servicios</h5><div class="menu-servicios-container"><ul id="menu-servicios" class="menu"><li id="menu-item-33102" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-33102"><a href="https://dinocloud.co/es/cloud-computing/">Ingeniería Cloud</a></li>
+<li id="menu-item-33103" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-33103"><a href="https://dinocloud.co/es/ingenieria-de-producto/">Ingeniería de Producto</a></li>
+</ul></div>            </div>
+            <div class="wp-block-column">
+                <h5>Socios</h5><div class="menu-socios-container"><ul id="menu-socios" class="menu"><li id="menu-item-33105" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-33105"><a href="https://dinocloud.co/es/amazon-web-services/">Amazon Web Services</a></li>
+</ul></div>            </div>
+            <div class="wp-block-column">
+                <h5>Nosotros</h5><div class="menu-nosotros-container"><ul id="menu-nosotros" class="menu"><li id="menu-item-33111" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-33111"><a href="https://dinocloud.co/es/lista-casos-de-exito/">Casos de éxito</a></li>
+</ul></div>            </div>
+        </div>
+    </div>
+
+    <div class="wp-block-columns">
+        <div class="wp-block-column footer-copyright">
+            <p>© 2022, DinoCloud, Inc. All rights reserved - <a href="mailto:info@dinocloud.co"
+                                                                target="_blank">info@dinocloud.co</a>
+                |
+                <a href="https://dinocloud.co/privacy-policy/">Privacy Policy</a> | <a
+                        href="https://dinocloud.co/sitemap_index.xml" target="_blank">XML Sitemap</a>
+            </p>
+        </div>
+    </div>
+    </div>
+</section>
+
+		<script>
+			window.RS_MODULES = window.RS_MODULES || {};
+			window.RS_MODULES.modules = window.RS_MODULES.modules || {};
+			window.RS_MODULES.waiting = window.RS_MODULES.waiting || [];
+			window.RS_MODULES.defered = true;
+			window.RS_MODULES.moduleWaiting = window.RS_MODULES.moduleWaiting || {};
+			window.RS_MODULES.type = 'compiled';
+		</script>
+		<script type='text/javascript' src='https://dinocloud.co/wp-includes/js/jquery/jquery.js' id='jquery-js'></script>
+<script type='text/javascript' id='leadin-script-loader-js-js-extra'>
+/* <![CDATA[ */
+var leadin_wordpress = {"userRole":"visitor","pageType":"post","leadinPluginVersion":"8.16.28"};
+/* ]]> */
+</script>
+<script type='text/javascript' src='https://js.hs-scripts.com/21668846.js?integration=WordPress&#038;ver=8.16.28' async defer id='hs-script-loader'></script>
+<script type='text/javascript' src='https://dinocloud.co/wp-content/plugins/revslider/public/assets/js/rbtools.min.js?ver=6.6.11' defer async id='tp-tools-js'></script>
+<script type='text/javascript' src='https://dinocloud.co/wp-content/plugins/revslider/public/assets/js/rs6.min.js?ver=6.6.11' defer async id='revmin-js'></script>
+<script type='text/javascript' id='rocket-browser-checker-js-after'>
+"use strict";var _createClass=function(){function defineProperties(target,props){for(var i=0;i<props.length;i++){var descriptor=props[i];descriptor.enumerable=descriptor.enumerable||!1,descriptor.configurable=!0,"value"in descriptor&&(descriptor.writable=!0),Object.defineProperty(target,descriptor.key,descriptor)}}return function(Constructor,protoProps,staticProps){return protoProps&&defineProperties(Constructor.prototype,protoProps),staticProps&&defineProperties(Constructor,staticProps),Constructor}}();function _classCallCheck(instance,Constructor){if(!(instance instanceof Constructor))throw new TypeError("Cannot call a class as a function")}var RocketBrowserCompatibilityChecker=function(){function RocketBrowserCompatibilityChecker(options){_classCallCheck(this,RocketBrowserCompatibilityChecker),this.passiveSupported=!1,this._checkPassiveOption(this),this.options=!!this.passiveSupported&&options}return _createClass(RocketBrowserCompatibilityChecker,[{key:"_checkPassiveOption",value:function(self){try{var options={get passive(){return!(self.passiveSupported=!0)}};window.addEventListener("test",null,options),window.removeEventListener("test",null,options)}catch(err){self.passiveSupported=!1}}},{key:"initRequestIdleCallback",value:function(){!1 in window&&(window.requestIdleCallback=function(cb){var start=Date.now();return setTimeout(function(){cb({didTimeout:!1,timeRemaining:function(){return Math.max(0,50-(Date.now()-start))}})},1)}),!1 in window&&(window.cancelIdleCallback=function(id){return clearTimeout(id)})}},{key:"isDataSaverModeOn",value:function(){return"connection"in navigator&&!0===navigator.connection.saveData}},{key:"supportsLinkPrefetch",value:function(){var elem=document.createElement("link");return elem.relList&&elem.relList.supports&&elem.relList.supports("prefetch")&&window.IntersectionObserver&&"isIntersecting"in IntersectionObserverEntry.prototype}},{key:"isSlowConnection",value:function(){return"connection"in navigator&&"effectiveType"in navigator.connection&&("2g"===navigator.connection.effectiveType||"slow-2g"===navigator.connection.effectiveType)}}]),RocketBrowserCompatibilityChecker}();
+</script>
+<script type='text/javascript' id='rocket-preload-links-js-extra'>
+/* <![CDATA[ */
+var RocketPreloadLinksConfig = {"excludeUris":"\/careers\/|\/(?:.+\/)?feed(?:\/(?:.+\/?)?)?$|\/(?:.+\/)?embed\/|\/(index\\.php\/)?wp\\-json(\/.*|$)|\/refer\/|\/go\/|\/recommend\/|\/recommends\/","usesTrailingSlash":"1","imageExt":"jpg|jpeg|gif|png|tiff|bmp|webp|avif|pdf|doc|docx|xls|xlsx|php","fileExt":"jpg|jpeg|gif|png|tiff|bmp|webp|avif|pdf|doc|docx|xls|xlsx|php|html|htm","siteUrl":"https:\/\/dinocloud.co\/es\/","onHoverDelay":"100","rateThrottle":"3"};
+/* ]]> */
+</script>
+<script type='text/javascript' id='rocket-preload-links-js-after'>
+(function() {
+"use strict";var r="function"==typeof Symbol&&"symbol"==typeof Symbol.iterator?function(e){return typeof e}:function(e){return e&&"function"==typeof Symbol&&e.constructor===Symbol&&e!==Symbol.prototype?"symbol":typeof e},e=function(){function i(e,t){for(var n=0;n<t.length;n++){var i=t[n];i.enumerable=i.enumerable||!1,i.configurable=!0,"value"in i&&(i.writable=!0),Object.defineProperty(e,i.key,i)}}return function(e,t,n){return t&&i(e.prototype,t),n&&i(e,n),e}}();function i(e,t){if(!(e instanceof t))throw new TypeError("Cannot call a class as a function")}var t=function(){function n(e,t){i(this,n),this.browser=e,this.config=t,this.options=this.browser.options,this.prefetched=new Set,this.eventTime=null,this.threshold=1111,this.numOnHover=0}return e(n,[{key:"init",value:function(){!this.browser.supportsLinkPrefetch()||this.browser.isDataSaverModeOn()||this.browser.isSlowConnection()||(this.regex={excludeUris:RegExp(this.config.excludeUris,"i"),images:RegExp(".("+this.config.imageExt+")$","i"),fileExt:RegExp(".("+this.config.fileExt+")$","i")},this._initListeners(this))}},{key:"_initListeners",value:function(e){-1<this.config.onHoverDelay&&document.addEventListener("mouseover",e.listener.bind(e),e.listenerOptions),document.addEventListener("mousedown",e.listener.bind(e),e.listenerOptions),document.addEventListener("touchstart",e.listener.bind(e),e.listenerOptions)}},{key:"listener",value:function(e){var t=e.target.closest("a"),n=this._prepareUrl(t);if(null!==n)switch(e.type){case"mousedown":case"touchstart":this._addPrefetchLink(n);break;case"mouseover":this._earlyPrefetch(t,n,"mouseout")}}},{key:"_earlyPrefetch",value:function(t,e,n){var i=this,r=setTimeout(function(){if(r=null,0===i.numOnHover)setTimeout(function(){return i.numOnHover=0},1e3);else if(i.numOnHover>i.config.rateThrottle)return;i.numOnHover++,i._addPrefetchLink(e)},this.config.onHoverDelay);t.addEventListener(n,function e(){t.removeEventListener(n,e,{passive:!0}),null!==r&&(clearTimeout(r),r=null)},{passive:!0})}},{key:"_addPrefetchLink",value:function(i){return this.prefetched.add(i.href),new Promise(function(e,t){var n=document.createElement("link");n.rel="prefetch",n.href=i.href,n.onload=e,n.onerror=t,document.head.appendChild(n)}).catch(function(){})}},{key:"_prepareUrl",value:function(e){if(null===e||"object"!==(void 0===e?"undefined":r(e))||!1 in e||-1===["http:","https:"].indexOf(e.protocol))return null;var t=e.href.substring(0,this.config.siteUrl.length),n=this._getPathname(e.href,t),i={original:e.href,protocol:e.protocol,origin:t,pathname:n,href:t+n};return this._isLinkOk(i)?i:null}},{key:"_getPathname",value:function(e,t){var n=t?e.substring(this.config.siteUrl.length):e;return n.startsWith("/")||(n="/"+n),this._shouldAddTrailingSlash(n)?n+"/":n}},{key:"_shouldAddTrailingSlash",value:function(e){return this.config.usesTrailingSlash&&!e.endsWith("/")&&!this.regex.fileExt.test(e)}},{key:"_isLinkOk",value:function(e){return null!==e&&"object"===(void 0===e?"undefined":r(e))&&(!this.prefetched.has(e.href)&&e.origin===this.config.siteUrl&&-1===e.href.indexOf("?")&&-1===e.href.indexOf("#")&&!this.regex.excludeUris.test(e.href)&&!this.regex.images.test(e.href))}}],[{key:"run",value:function(){"undefined"!=typeof RocketPreloadLinksConfig&&new n(new RocketBrowserCompatibilityChecker({capture:!0,passive:!0}),RocketPreloadLinksConfig).init()}}]),n}();t.run();
+}());
+</script>
+<script type='text/javascript' src='https://dinocloud.co/wp-content/plugins/slide-anything/owl-carousel/owl.carousel.min.js?ver=2.2.1' id='owl_carousel_js-js'></script>
+<script type='text/javascript' src='https://dinocloud.co/wp-content/plugins/slide-anything/js/jquery.mousewheel.min.js?ver=3.1.13' id='mousewheel_js-js'></script>
+<script type='text/javascript' src='https://dinocloud.co/wp-content/plugins/slide-anything/owl-carousel/owl.carousel2.thumbs.min.js?ver=0.1.8' id='owl_thumbs_js-js'></script>
+<script type='text/javascript' src='https://dinocloud.co/wp-content/plugins/slide-anything/lightgallery/lightgallery.min.js?ver=2.5.0' id='lightgallery_js-js'></script>
+<script type='text/javascript' src='https://dinocloud.co/wp-content/plugins/slide-anything/lightgallery/plugins/video/lg-video.min.js?ver=2.5.0' id='lightgallery_video_js-js'></script>
+<script type='text/javascript' src='https://dinocloud.co/wp-content/plugins/slide-anything/lightgallery/plugins/zoom/lg-zoom.min.js?ver=2.5.0' id='lightgallery_zoom_js-js'></script>
+<script type='text/javascript' src='https://dinocloud.co/wp-content/plugins/slide-anything/lightgallery/plugins/autoplay/lg-autoplay.min.js?ver=2.5.0' id='lightgallery_autoplay_js-js'></script>
+<script type='text/javascript' src='https://dinocloud.co/wp-content/plugins/slide-anything/lightgallery/player.min.js?ver=2.17.1' id='vimeo_player_js-js'></script>
+<style>.wp-container-1 > .alignleft { float: left; margin-inline-start: 0; margin-inline-end: 2em; }.wp-container-1 > .alignright { float: right; margin-inline-start: 2em; margin-inline-end: 0; }.wp-container-1 > .aligncenter { margin-left: auto !important; margin-right: auto !important; }</style>
+<style>.wp-container-2 > .alignleft { float: left; margin-inline-start: 0; margin-inline-end: 2em; }.wp-container-2 > .alignright { float: right; margin-inline-start: 2em; margin-inline-end: 0; }.wp-container-2 > .aligncenter { margin-left: auto !important; margin-right: auto !important; }</style>
+<style>.wp-container-3 {display: flex;gap: 2em;flex-wrap: nowrap;align-items: center;}.wp-container-3 > * { margin: 0; }</style>
+<style>.wp-container-4 > .alignleft { float: left; margin-inline-start: 0; margin-inline-end: 2em; }.wp-container-4 > .alignright { float: right; margin-inline-start: 2em; margin-inline-end: 0; }.wp-container-4 > .aligncenter { margin-left: auto !important; margin-right: auto !important; }</style>
+<style>.wp-container-5 > .alignleft { float: left; margin-inline-start: 0; margin-inline-end: 2em; }.wp-container-5 > .alignright { float: right; margin-inline-start: 2em; margin-inline-end: 0; }.wp-container-5 > .aligncenter { margin-left: auto !important; margin-right: auto !important; }</style>
+<style>.wp-container-6 > .alignleft { float: left; margin-inline-start: 0; margin-inline-end: 2em; }.wp-container-6 > .alignright { float: right; margin-inline-start: 2em; margin-inline-end: 0; }.wp-container-6 > .aligncenter { margin-left: auto !important; margin-right: auto !important; }</style>
+<style>.wp-container-7 {display: flex;gap: 2em;flex-wrap: nowrap;align-items: center;}.wp-container-7 > * { margin: 0; }</style>
+<style>.wp-container-8 > .alignleft { float: left; margin-inline-start: 0; margin-inline-end: 2em; }.wp-container-8 > .alignright { float: right; margin-inline-start: 2em; margin-inline-end: 0; }.wp-container-8 > .aligncenter { margin-left: auto !important; margin-right: auto !important; }</style>
+<style>.wp-container-9 > .alignleft { float: left; margin-inline-start: 0; margin-inline-end: 2em; }.wp-container-9 > .alignright { float: right; margin-inline-start: 2em; margin-inline-end: 0; }.wp-container-9 > .aligncenter { margin-left: auto !important; margin-right: auto !important; }</style>
+<style>.wp-container-10 {display: flex;gap: 2em;flex-wrap: nowrap;align-items: center;}.wp-container-10 > * { margin: 0; }</style>
+<style>.wp-container-11 > .alignleft { float: left; margin-inline-start: 0; margin-inline-end: 2em; }.wp-container-11 > .alignright { float: right; margin-inline-start: 2em; margin-inline-end: 0; }.wp-container-11 > .aligncenter { margin-left: auto !important; margin-right: auto !important; }</style>
+<style>.wp-container-12 > .alignleft { float: left; margin-inline-start: 0; margin-inline-end: 2em; }.wp-container-12 > .alignright { float: right; margin-inline-start: 2em; margin-inline-end: 0; }.wp-container-12 > .aligncenter { margin-left: auto !important; margin-right: auto !important; }</style>
+<style>.wp-container-13 > .alignleft { float: left; margin-inline-start: 0; margin-inline-end: 2em; }.wp-container-13 > .alignright { float: right; margin-inline-start: 2em; margin-inline-end: 0; }.wp-container-13 > .aligncenter { margin-left: auto !important; margin-right: auto !important; }</style>
+<style>.wp-container-14 {display: flex;gap: 2em;flex-wrap: nowrap;align-items: center;}.wp-container-14 > * { margin: 0; }</style>
+<style>.wp-container-15 > .alignleft { float: left; margin-inline-start: 0; margin-inline-end: 2em; }.wp-container-15 > .alignright { float: right; margin-inline-start: 2em; margin-inline-end: 0; }.wp-container-15 > .aligncenter { margin-left: auto !important; margin-right: auto !important; }</style>
+<style>.wp-container-16 {display: flex;gap: 2em;flex-wrap: nowrap;align-items: center;}.wp-container-16 > * { margin: 0; }</style>
+<style>.wp-container-17 > .alignleft { float: left; margin-inline-start: 0; margin-inline-end: 2em; }.wp-container-17 > .alignright { float: right; margin-inline-start: 2em; margin-inline-end: 0; }.wp-container-17 > .aligncenter { margin-left: auto !important; margin-right: auto !important; }</style>
+<style>.wp-container-18 > .alignleft { float: left; margin-inline-start: 0; margin-inline-end: 2em; }.wp-container-18 > .alignright { float: right; margin-inline-start: 2em; margin-inline-end: 0; }.wp-container-18 > .aligncenter { margin-left: auto !important; margin-right: auto !important; }</style>
+<style>.wp-container-19 {display: flex;gap: 2em;flex-wrap: nowrap;align-items: center;}.wp-container-19 > * { margin: 0; }</style>
+<style>.wp-container-20 > .alignleft { float: left; margin-inline-start: 0; margin-inline-end: 2em; }.wp-container-20 > .alignright { float: right; margin-inline-start: 2em; margin-inline-end: 0; }.wp-container-20 > .aligncenter { margin-left: auto !important; margin-right: auto !important; }</style>
+<style>.wp-container-21 > .alignleft { float: left; margin-inline-start: 0; margin-inline-end: 2em; }.wp-container-21 > .alignright { float: right; margin-inline-start: 2em; margin-inline-end: 0; }.wp-container-21 > .aligncenter { margin-left: auto !important; margin-right: auto !important; }</style>
+<style>.wp-container-22 > .alignleft { float: left; margin-inline-start: 0; margin-inline-end: 2em; }.wp-container-22 > .alignright { float: right; margin-inline-start: 2em; margin-inline-end: 0; }.wp-container-22 > .aligncenter { margin-left: auto !important; margin-right: auto !important; }</style>
+<style>.wp-container-23 {display: flex;gap: 2em;flex-wrap: nowrap;align-items: center;}.wp-container-23 > * { margin: 0; }</style>
+<style>.wp-container-24 > .alignleft { float: left; margin-inline-start: 0; margin-inline-end: 2em; }.wp-container-24 > .alignright { float: right; margin-inline-start: 2em; margin-inline-end: 0; }.wp-container-24 > .aligncenter { margin-left: auto !important; margin-right: auto !important; }</style>
+<style>.wp-container-25 {display: flex;gap: 2em;flex-wrap: nowrap;align-items: center;}.wp-container-25 > * { margin: 0; }</style>
+<style>.wp-container-26 > .alignleft { float: left; margin-inline-start: 0; margin-inline-end: 2em; }.wp-container-26 > .alignright { float: right; margin-inline-start: 2em; margin-inline-end: 0; }.wp-container-26 > .aligncenter { margin-left: auto !important; margin-right: auto !important; }</style>
+<style>.wp-container-27 > .alignleft { float: left; margin-inline-start: 0; margin-inline-end: 2em; }.wp-container-27 > .alignright { float: right; margin-inline-start: 2em; margin-inline-end: 0; }.wp-container-27 > .aligncenter { margin-left: auto !important; margin-right: auto !important; }</style>
+<style>.wp-container-28 {display: flex;gap: 2em;flex-wrap: nowrap;align-items: center;}.wp-container-28 > * { margin: 0; }</style>
+<style>.wp-container-29 > .alignleft { float: left; margin-inline-start: 0; margin-inline-end: 2em; }.wp-container-29 > .alignright { float: right; margin-inline-start: 2em; margin-inline-end: 0; }.wp-container-29 > .aligncenter { margin-left: auto !important; margin-right: auto !important; }</style>
+<style>.wp-container-30 > .alignleft { float: left; margin-inline-start: 0; margin-inline-end: 2em; }.wp-container-30 > .alignright { float: right; margin-inline-start: 2em; margin-inline-end: 0; }.wp-container-30 > .aligncenter { margin-left: auto !important; margin-right: auto !important; }</style>
+<style>.wp-container-31 > .alignleft { float: left; margin-inline-start: 0; margin-inline-end: 2em; }.wp-container-31 > .alignright { float: right; margin-inline-start: 2em; margin-inline-end: 0; }.wp-container-31 > .aligncenter { margin-left: auto !important; margin-right: auto !important; }</style>
+<style>.wp-container-32 {display: flex;gap: 2em;flex-wrap: nowrap;align-items: center;}.wp-container-32 > * { margin: 0; }</style>
+<style>.wp-container-33 > .alignleft { float: left; margin-inline-start: 0; margin-inline-end: 2em; }.wp-container-33 > .alignright { float: right; margin-inline-start: 2em; margin-inline-end: 0; }.wp-container-33 > .aligncenter { margin-left: auto !important; margin-right: auto !important; }</style>
+<style>.wp-container-34 {display: flex;gap: 2em;flex-wrap: nowrap;align-items: center;}.wp-container-34 > * { margin: 0; }</style>
+<style>.wp-container-35 > .alignleft { float: left; margin-inline-start: 0; margin-inline-end: 2em; }.wp-container-35 > .alignright { float: right; margin-inline-start: 2em; margin-inline-end: 0; }.wp-container-35 > .aligncenter { margin-left: auto !important; margin-right: auto !important; }</style>
+<style>.wp-container-36 > .alignleft { float: left; margin-inline-start: 0; margin-inline-end: 2em; }.wp-container-36 > .alignright { float: right; margin-inline-start: 2em; margin-inline-end: 0; }.wp-container-36 > .aligncenter { margin-left: auto !important; margin-right: auto !important; }</style>
+<style>.wp-container-37 {display: flex;gap: 2em;flex-wrap: nowrap;align-items: center;}.wp-container-37 > * { margin: 0; }</style>
+<style>.wp-container-38 > .alignleft { float: left; margin-inline-start: 0; margin-inline-end: 2em; }.wp-container-38 > .alignright { float: right; margin-inline-start: 2em; margin-inline-end: 0; }.wp-container-38 > .aligncenter { margin-left: auto !important; margin-right: auto !important; }</style>
+<style>.wp-container-39 > .alignleft { float: left; margin-inline-start: 0; margin-inline-end: 2em; }.wp-container-39 > .alignright { float: right; margin-inline-start: 2em; margin-inline-end: 0; }.wp-container-39 > .aligncenter { margin-left: auto !important; margin-right: auto !important; }</style>
+<style>.wp-container-40 > .alignleft { float: left; margin-inline-start: 0; margin-inline-end: 2em; }.wp-container-40 > .alignright { float: right; margin-inline-start: 2em; margin-inline-end: 0; }.wp-container-40 > .aligncenter { margin-left: auto !important; margin-right: auto !important; }</style>
+<style>.wp-container-41 {display: flex;gap: 2em;flex-wrap: nowrap;align-items: center;}.wp-container-41 > * { margin: 0; }</style>
+<style>.wp-container-42 > .alignleft { float: left; margin-inline-start: 0; margin-inline-end: 2em; }.wp-container-42 > .alignright { float: right; margin-inline-start: 2em; margin-inline-end: 0; }.wp-container-42 > .aligncenter { margin-left: auto !important; margin-right: auto !important; }</style>
+<style>.wp-container-43 {display: flex;gap: 2em;flex-wrap: nowrap;align-items: center;}.wp-container-43 > * { margin: 0; }</style>
+<style>.wp-container-44 > .alignleft { float: left; margin-inline-start: 0; margin-inline-end: 2em; }.wp-container-44 > .alignright { float: right; margin-inline-start: 2em; margin-inline-end: 0; }.wp-container-44 > .aligncenter { margin-left: auto !important; margin-right: auto !important; }</style>
+<style>.wp-container-45 > .alignleft { float: left; margin-inline-start: 0; margin-inline-end: 2em; }.wp-container-45 > .alignright { float: right; margin-inline-start: 2em; margin-inline-end: 0; }.wp-container-45 > .aligncenter { margin-left: auto !important; margin-right: auto !important; }</style>
+<style>.wp-container-46 {display: flex;gap: 2em;flex-wrap: nowrap;align-items: center;}.wp-container-46 > * { margin: 0; }</style>
+<style>.wp-container-47 > .alignleft { float: left; margin-inline-start: 0; margin-inline-end: 2em; }.wp-container-47 > .alignright { float: right; margin-inline-start: 2em; margin-inline-end: 0; }.wp-container-47 > .aligncenter { margin-left: auto !important; margin-right: auto !important; }</style>
+<style>.wp-container-48 > .alignleft { float: left; margin-inline-start: 0; margin-inline-end: 2em; }.wp-container-48 > .alignright { float: right; margin-inline-start: 2em; margin-inline-end: 0; }.wp-container-48 > .aligncenter { margin-left: auto !important; margin-right: auto !important; }</style>
+<style>.wp-container-49 {display: flex;gap: 2em;flex-wrap: nowrap;align-items: center;}.wp-container-49 > * { margin: 0; }</style>
+<style>.wp-container-50 > .alignleft { float: left; margin-inline-start: 0; margin-inline-end: 2em; }.wp-container-50 > .alignright { float: right; margin-inline-start: 2em; margin-inline-end: 0; }.wp-container-50 > .aligncenter { margin-left: auto !important; margin-right: auto !important; }</style>
+<style>.wp-container-51 > .alignleft { float: left; margin-inline-start: 0; margin-inline-end: 2em; }.wp-container-51 > .alignright { float: right; margin-inline-start: 2em; margin-inline-end: 0; }.wp-container-51 > .aligncenter { margin-left: auto !important; margin-right: auto !important; }</style>
+<style>.wp-container-52 > .alignleft { float: left; margin-inline-start: 0; margin-inline-end: 2em; }.wp-container-52 > .alignright { float: right; margin-inline-start: 2em; margin-inline-end: 0; }.wp-container-52 > .aligncenter { margin-left: auto !important; margin-right: auto !important; }</style>
+<style>.wp-container-53 {display: flex;gap: 2em;flex-wrap: nowrap;align-items: center;}.wp-container-53 > * { margin: 0; }</style>
+<style>.wp-container-54 > .alignleft { float: left; margin-inline-start: 0; margin-inline-end: 2em; }.wp-container-54 > .alignright { float: right; margin-inline-start: 2em; margin-inline-end: 0; }.wp-container-54 > .aligncenter { margin-left: auto !important; margin-right: auto !important; }</style>
+<style>.wp-container-55 > .alignleft { float: left; margin-inline-start: 0; margin-inline-end: 2em; }.wp-container-55 > .alignright { float: right; margin-inline-start: 2em; margin-inline-end: 0; }.wp-container-55 > .aligncenter { margin-left: auto !important; margin-right: auto !important; }</style>
+<style>.wp-container-56 {display: flex;gap: 2em;flex-wrap: nowrap;align-items: center;}.wp-container-56 > * { margin: 0; }</style>
+<style>.wp-container-57 > .alignleft { float: left; margin-inline-start: 0; margin-inline-end: 2em; }.wp-container-57 > .alignright { float: right; margin-inline-start: 2em; margin-inline-end: 0; }.wp-container-57 > .aligncenter { margin-left: auto !important; margin-right: auto !important; }</style>
+<style>.wp-container-58 {display: flex;gap: 2em;flex-wrap: nowrap;align-items: center;}.wp-container-58 > * { margin: 0; }</style>
+<style>.wp-container-59 > .alignleft { float: left; margin-inline-start: 0; margin-inline-end: 2em; }.wp-container-59 > .alignright { float: right; margin-inline-start: 2em; margin-inline-end: 0; }.wp-container-59 > .aligncenter { margin-left: auto !important; margin-right: auto !important; }</style>
+<style>.wp-container-60 > .alignleft { float: left; margin-inline-start: 0; margin-inline-end: 2em; }.wp-container-60 > .alignright { float: right; margin-inline-start: 2em; margin-inline-end: 0; }.wp-container-60 > .aligncenter { margin-left: auto !important; margin-right: auto !important; }</style>
+<style>.wp-container-61 > .alignleft { float: left; margin-inline-start: 0; margin-inline-end: 2em; }.wp-container-61 > .alignright { float: right; margin-inline-start: 2em; margin-inline-end: 0; }.wp-container-61 > .aligncenter { margin-left: auto !important; margin-right: auto !important; }</style>
+<style>.wp-container-62 > .alignleft { float: left; margin-inline-start: 0; margin-inline-end: 2em; }.wp-container-62 > .alignright { float: right; margin-inline-start: 2em; margin-inline-end: 0; }.wp-container-62 > .aligncenter { margin-left: auto !important; margin-right: auto !important; }</style>
+<style>.wp-container-63 {display: flex;gap: 2em;flex-wrap: nowrap;align-items: center;}.wp-container-63 > * { margin: 0; }</style>
+<link rel='stylesheet' id='advgb_blocks_styles-css'  href='https://dinocloud.co/wp-content/plugins/advanced-gutenberg/assets/css/blocks.css?ver=3.0.1' type='text/css' media='all' />
+<link rel='stylesheet' id='owl_carousel_css-css'  href='https://dinocloud.co/wp-content/plugins/slide-anything/owl-carousel/owl.carousel.css?ver=2.2.1.1' type='text/css' media='all' />
+<link rel='stylesheet' id='owl_theme_css-css'  href='https://dinocloud.co/wp-content/plugins/slide-anything/owl-carousel/sa-owl-theme.css?ver=2.0' type='text/css' media='all' />
+<link rel='stylesheet' id='owl_animate_css-css'  href='https://dinocloud.co/wp-content/plugins/slide-anything/owl-carousel/animate.min.css?ver=2.0' type='text/css' media='all' />
+<link rel='stylesheet' id='lightgallery_css-css'  href='https://dinocloud.co/wp-content/plugins/slide-anything/lightgallery/css/lightgallery.css?ver=2.5.0' type='text/css' media='all' />
+<link rel='stylesheet' id='lightgallery_bundle_css-css'  href='https://dinocloud.co/wp-content/plugins/slide-anything/lightgallery/css/lightgallery-bundle.min.css?ver=2.5.0' type='text/css' media='all' />
+<link rel='stylesheet' id='rs-plugin-settings-css'  href='https://dinocloud.co/wp-content/plugins/revslider/public/assets/css/rs6.css?ver=6.6.11' type='text/css' media='all' />
+<style id='rs-plugin-settings-inline-css' type='text/css'>
+#rs-demo-id {}
+</style>
+    <script>
+        /(trident|msie)/i.test(navigator.userAgent) && document.getElementById && window.addEventListener && window.addEventListener("hashchange", function () {
+            var t, e = location.hash.substring(1);
+            /^[A-z0-9_-]+$/.test(e) && (t = document.getElementById(e)) && (/^(?:a|select|input|button|textarea)$/i.test(t.tagName) || (t.tabIndex = -1), t.focus())
+        }, !1);
+    </script>
+    <script type="text/javascript" src="https://dinocloud.co/wp-content/themes/Dinocloud/assets/js/index.js"></script>
+<script type="application/ld+json"  >
+    {
+        "@context": {
+            "@vocab": "http://schema.org/"
+        },
+        "@graph": [
+            {
+                "@id": "https://dinocloud.co",
+                "@type": "Organization",
+                "name": "DinoCloud SRL",
+                "url": "https://dinocloud.co/",
+                "logo": "https://dinocloud.co/wp-content/themes/Dinocloud/logo-dinocloud.svg",
+                "sameAs": [
+                    "https://www.instagram.com/dinocloud_/",
+                    "https://www.facebook.com/dinocloudcons/",
+                    "https://www.youtube.com/channel/UCYFraOippcCbr3C4R31JVxg",
+                    "https://twitter.com/dinocloud_",
+                    "https://www.linkedin.com/company/dinocloud/"
+                ]
+            },
+            {
+                "@type": "LocalBusiness",
+                "additionalType": [
+                    "http://www.productontology.org/id/Cloud_computing",
+                    "http://www.productontology.org/id/Cloud_computing_security",
+                    "http://www.productontology.org/id/Cloud_computing_architecture",
+                    "http://www.productontology.org/id/Cloud_storage",
+                    "http://www.productontology.org/id/Hardware_virtualization",
+                    "http://www.productontology.org/id/Service-oriented_architecture",
+                    "http://www.productontology.org/id/Autonomic_computing",
+                    "http://www.productontology.org/id/Serverless_computing",
+                    "http://www.productontology.org/id/Infrastructure_as_a_service",
+                    "http://www.productontology.org/id/Mobile_backend_as_a_service",
+                    "http://www.productontology.org/id/Function_as_a_service",
+                    "http://www.productontology.org/id/Minimum_viable_product",
+                    "http://www.productontology.org/id/Product_engineering",	"http://www.productontology.org/id/Utility_computing",
+                    "http://www.productontology.org/id/Amazon_Elastic_Compute_Cloud",
+                    "http://www.productontology.org/id/Amazon_Web_Services",
+                    "http://www.productontology.org/id/Kubernetes",
+                    "http://www.productontology.org/id/Docker_(software)",
+                    "http://www.productontology.org/id/OS-level_virtualization",
+                    "http://www.productontology.org/id/OpenShift",
+                    "http://www.productontology.org/id/Terraform_(software)"
+                ],
+                "parentOrganization": {
+                    "name": "Dinocloud SRL"
+                },
+                "name": "DinoCloud",
+                "image": "https://dinocloud.co/wp-content/uploads/2020/05/dinocloud-contact.jpg",
+                "aggregateRating": {
+                    "@type": "AggregateRating",
+                    "ratingValue": "5",
+                    "reviewCount": "15"
+                },
+                "url": "hhttps://dinocloud.co/es/",
+                "priceRange": "$$",
+                "description": "Experienced team in Cloud Engineering and DevOps processes serving Latin America. Our cloud computing work includes adoption, optimization, migration and monitoring involving cloud platforms and software development process automation.",
+                "sameAs": [
+                    "https://g.page/dinocloud?we",
+                    "https://www.instagram.com/dinocloud_/",
+                    "https://www.facebook.com/dinocloudcons/",
+                    "https://www.youtube.com/channel/UCYFraOippcCbr3C4R31JVxg",
+                    "https://twitter.com/dinocloud_",
+                    "https://www.linkedin.com/company/dinocloud/"
+                ],
+                "address": {
+                    "@type": "PostalAddress",
+                    "streetAddress": "Humberto 1° 650, Piso 4",
+                    "addressLocality": "Córdoba",
+                    "addressRegion": "Argentina",
+                    "postalCode": "X5000HZQ",
+                    "telephone": "54-9-351-554-1665"
+                },
+                "openingHoursSpecification": {
+                    "@type": "OpeningHoursSpecification",
+                    "dayOfWeek": [
+                        "Monday",
+                        "Tuesday",
+                        "Wednesday",
+                        "Thursday",
+                        "Friday"
+                    ],
+                    "opens": "09:00",
+                    "closes": "18:00"
+                },
+                "hasmap": "https://goo.gl/maps/w2RW2KLCdkCoJWWC7",
+                "geo": {
+                    "@type": "GeoCoordinates",
+                    "latitude": -31.410210,
+                    "longitude": -64.181690
+                }
+            },
+            {
+                "@type": "LocalBusiness",
+                "additionalType": [
+                    "http://www.productontology.org/id/Cloud_computing",
+                    "http://www.productontology.org/id/Cloud_computing_security",
+                    "http://www.productontology.org/id/Cloud_computing_architecture",
+                    "http://www.productontology.org/id/Cloud_storage",
+                    "http://www.productontology.org/id/Hardware_virtualization",
+                    "http://www.productontology.org/id/Service-oriented_architecture",
+                    "http://www.productontology.org/id/Autonomic_computing",
+                    "http://www.productontology.org/id/Serverless_computing",
+                    "http://www.productontology.org/id/Mobile_backend_as_a_service",
+                    "http://www.productontology.org/id/Function_as_a_service",
+                    "http://www.productontology.org/id/Infrastructure_as_a_service",
+                    "http://www.productontology.org/id/Minimum_viable_product",
+                    "http://www.productontology.org/id/Product_engineering",	"http://www.productontology.org/id/Utility_computing",
+                    "http://www.productontology.org/id/Amazon_Elastic_Compute_Cloud",
+                    "http://www.productontology.org/id/Amazon_Web_Services",
+                    "http://www.productontology.org/id/Kubernetes",
+                    "http://www.productontology.org/id/Docker_(software)",
+                    "http://www.productontology.org/id/OS-level_virtualization",
+                    "http://www.productontology.org/id/OpenShift",
+                    "http://www.productontology.org/id/Terraform_(software)"
+
+                ],
+                "parentOrganization": {
+                    "name": "DinoCloud SRL"
+                },
+                "name": "DinoCloud",
+                "image": "https://dinocloud.co/wp-content/uploads/2020/05/dinocloud-contact.jpg",
+                "aggregateRating": {
+                    "@type": "AggregateRating",
+                    "ratingValue": "5",
+                    "reviewCount": "15"
+                },
+                "url": "https://dinocloud.co/",
+                "priceRange": "$$",
+                "description": "Experienced team in Cloud Engineering and DevOps processes serving US, Canada, and Mexico. Our cloud computing work includes adoption, optimization, migration and monitoring involving cloud platforms and software development process automation.",
+                "sameAs": "https://g.page/dinocloud-new-york?gm",
+                "address": {
+                    "@type": "PostalAddress",
+                    "streetAddress": "67-87 Booth St #2H",
+                    "addressLocality": "Forest Hills",
+                    "addressRegion": "NY",
+                    "postalCode": "11375",
+                    "telephone": "1-571-322-6769"
+                },
+                "openingHoursSpecification": {
+                    "@type": "OpeningHoursSpecification",
+                    "dayOfWeek": [
+                        "Monday",
+                        "Tuesday",
+                        "Wednesday",
+                        "Thursday",
+                        "Friday"
+                    ],
+                    "opens": "09:00",
+                    "closes": "18:00"
+                },
+                "hasmap": "https://g.page/dinocloud-new-york?share",
+                "geo": {
+                    "@type": "GeoCoordinates",
+                    "latitude": 40.724960,
+                    "longitude": -73.852410
+                }
+            },
+            {
+                "@type": "LocalBusiness",
+                "additionalType": [
+                    "http://www.productontology.org/id/Cloud_computing",
+                    "http://www.productontology.org/id/Cloud_computing_security",
+                    "http://www.productontology.org/id/Cloud_computing_architecture",
+                    "http://www.productontology.org/id/Cloud_storage",
+                    "http://www.productontology.org/id/Hardware_virtualization",
+                    "http://www.productontology.org/id/Service-oriented_architecture",
+                    "http://www.productontology.org/id/Autonomic_computing",
+                    "http://www.productontology.org/id/Serverless_computing",
+                    "http://www.productontology.org/id/Mobile_backend_as_a_service",
+                    "http://www.productontology.org/id/Function_as_a_service",
+                    "http://www.productontology.org/id/Mobile_backend_as_a_service",
+                    "http://www.productontology.org/id/Function_as_a_service",
+                    "http://www.productontology.org/id/Infrastructure_as_a_service",
+                    "http://www.productontology.org/id/Minimum_viable_product",
+                    "http://www.productontology.org/id/Product_engineering",	"http://www.productontology.org/id/Utility_computing",
+                    "http://www.productontology.org/id/Amazon_Elastic_Compute_Cloud",
+                    "http://www.productontology.org/id/Amazon_Web_Services",
+                    "http://www.productontology.org/id/Kubernetes",
+                    "http://www.productontology.org/id/Docker_(software)",
+                    "http://www.productontology.org/id/OS-level_virtualization",
+                    "http://www.productontology.org/id/OpenShift",
+                    "http://www.productontology.org/id/Terraform_(software)"
+                ],
+                "parentOrganization": {
+                    "name": "Dinocloud SRL"
+                },
+                "name": "DinoCloud",
+                "image": "https://dinocloud.co/wp-content/uploads/2020/05/dinocloud-contact.jpg",
+                "aggregateRating": {
+                    "@type": "AggregateRating",
+                    "ratingValue": "5",
+                    "reviewCount": "5"
+                },
+                "url": "hhttps://dinocloud.co/es/",
+                "priceRange": "$$",
+                "description": "Experienced team in Cloud Engineering and DevOps processes serving Colombia and Latin America as a whole. Our cloud computing work includes adoption, optimization, migration, and monitoring cloud platforms and software development process automation.",
+                "sameAs": [
+                    "https://g.page/r/CSnayfxH__zYEBA",
+                    "https://www.instagram.com/dinocloud_/",
+                    "https://www.facebook.com/dinocloudcons/",
+                    "https://www.youtube.com/channel/UCYFraOippcCbr3C4R31JVxg",
+                    "https://twitter.com/dinocloud_",
+                    "https://www.linkedin.com/company/dinocloud/"
+                ],
+                "address": {
+                    "@type": "PostalAddress",
+                    "streetAddress": "Calle 135 # 7 41 T4B Ap 603",
+                    "addressLocality": "Bogotá",
+                    "addressRegion": "Colombia",
+                    "postalCode": "110111"
+                },
+                "openingHoursSpecification": {
+                    "@type": "OpeningHoursSpecification",
+                    "dayOfWeek": [
+                        "Monday",
+                        "Tuesday",
+                        "Wednesday",
+                        "Thursday",
+                        "Friday"
+                    ],
+                    "opens": "09:00",
+                    "closes": "18:00"
+                },
+                "hasmap": "https://goo.gl/maps/ruFwTnqMNUPmcTq19",
+                "geo": {
+                    "@type": "GeoCoordinates",
+                    "latitude": 4.571000,
+                    "longitude": -74.167560
+                }},
+            {
+                "@type": "LocalBusiness",
+                "additionalType": [
+                    "http://www.productontology.org/id/Cloud_computing",
+                    "http://www.productontology.org/id/Cloud_computing_security",
+                    "http://www.productontology.org/id/Cloud_computing_architecture",
+                    "http://www.productontology.org/id/Cloud_storage",
+                    "http://www.productontology.org/id/Hardware_virtualization",
+                    "http://www.productontology.org/id/Service-oriented_architecture",
+                    "http://www.productontology.org/id/Autonomic_computing",
+                    "http://www.productontology.org/id/Serverless_computing",
+                    "http://www.productontology.org/id/Infrastructure_as_a_service",
+                    "http://www.productontology.org/id/Mobile_backend_as_a_service",
+                    "http://www.productontology.org/id/Function_as_a_service",
+                    "http://www.productontology.org/id/Minimum_viable_product",
+                    "http://www.productontology.org/id/Product_engineering",	"http://www.productontology.org/id/Utility_computing",
+                    "http://www.productontology.org/id/Amazon_Elastic_Compute_Cloud",
+                    "http://www.productontology.org/id/Amazon_Web_Services",
+                    "http://www.productontology.org/id/Kubernetes",
+                    "http://www.productontology.org/id/Docker_(software)",
+                    "http://www.productontology.org/id/OS-level_virtualization",
+                    "http://www.productontology.org/id/OpenShift",
+                    "http://www.productontology.org/id/Terraform_(software)"
+
+                ],
+                "parentOrganization": {
+                    "name": "Dinocloud SRL"
+                },
+                "name": "DinoCloud",
+                "image": "hhttps://dinocloud.co/wp-content/uploads/2020/05/dinocloud-contact.jpg",
+                "aggregateRating": {
+                    "@type": "AggregateRating",
+                    "ratingValue": "5",
+                    "reviewCount": "10"
+                },
+                "url": "https://dinocloud.co/",
+                "priceRange": "$$",
+                "description": "Experienced team in Cloud Engineering and DevOps processes serving US, Canada, and Mexico. Our cloud computing work includes adoption, optimization, migration and monitoring involving cloud platforms and software development process automation.",
+                "sameAs": "https://g.page/dinocloud-miami?gm",
+                "address": {
+                    "@type": "PostalAddress",
+                    "streetAddress": "40 SW 13th St, Suite 102",
+                    "addressLocality": "Miami",
+                    "addressRegion": "FL",
+                    "postalCode": "33130",
+                    "telephone": "1-574-598-4299"
+                },
+                "openingHoursSpecification": {
+                    "@type": "OpeningHoursSpecification",
+                    "dayOfWeek": [
+                        "Monday",
+                        "Tuesday",
+                        "Wednesday",
+                        "Thursday",
+                        "Friday"
+                    ],
+                    "opens": "09:00",
+                    "closes": "18:00"
+                },
+                "hasmap": "https://goo.gl/maps/BVbuTcw3htLzMny86",
+                "geo": {
+                    "@type": "GeoCoordinates",
+                    "latitude": 25.761290,
+                    "longitude": -80.194350
+                }
+            }
+        ]
+    }
+</script>
+
+            <script>
+        document.addEventListener( 'wpcf7mailsent', function( event ) {
+            location = 'https://dinocloud.co/es/gracias/';
+        }, false );
+    </script>
+        
+<!-- Start of HubSpot Embed Code -->
+<script type="text/javascript" id="hs-script-loader" async defer src="//js.hs-scripts.com/21668846.js"></script>
+<!-- End of HubSpot Embed Code -->
+<!-- VISA Tracking Code for dinocloud.co --><script>(function(v,i,s,a,t){v[t]=v[t]||function(){(v[t].v=v[t].v||[]).push(arguments)};if(!v._visaSettings){v._visaSettings={}}v._visaSettings[a]={v:'1.0',s:a,a:'1',t:t};var b=i.getElementsByTagName('body')[0];var p=i.createElement('script');p.defer=1;p.async=1;p.src=s+'?s='+a;b.appendChild(p)})(window,document,'//app-worker.visitor-analytics.io/main.js','0b28beea-08f7-11ed-b589-901b0edac50a','va')</script><!-- VISA Tracking Code for dinocloud.co -->
+</body>
+</html>

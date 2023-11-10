@@ -9,7 +9,7 @@ export const CartPage = () => {
     eliminarCompra,
   } = useContext(CartContext);
   const calcularTotal=()=>{
-    return listaCompras.reduce((total, item)=> total+ item.price * item.cantidad, 0).toFixed(2) //corta en dos decimales
+    return listaCompras.reduce((total, item)=> total+ item.price * item.cantidad , 0).toFixed(2) //corta en dos decimales
   }
   return (
     <>
@@ -63,7 +63,9 @@ export const CartPage = () => {
         </tbody>
       </table>
       <div className="d-grid gap-2">
-        <button className="btn btn-primary" onClick={print}>COMPRAR</button>
+        <button className="btn btn-primary" 
+        onClick={print}
+        disabled={listaCompras<1}>COMPRAR</button>
       </div>
     </>
   );
