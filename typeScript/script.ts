@@ -30,3 +30,22 @@ function jugar(equipo1: number = 11, equipo2: number = 11): void {
 // no infiera que es any es decir que lance error si ponemos any
 // con any podemos saltear las validaciones de tipado de ts
 
+class Sorteo <T>{
+    // <T> genérico, de la clase que yo quiera desde afuera
+    //Sorteo define el tipo de dato en el genérico
+    private number? : T;
+//encapsulamiento: no se puede tocar el number, solo con gettes y setters se puede mostrar y modificar, a través de la instancia que corresponda, primero se instancia para modificar
+    constructor(private nombre:string){}
+
+    setNumero(numero:T){  //setNumero para setear el número, en encapsulamiento las modificaciones no se hacen directamente sino a través de funciones
+        this.number  = numero; //this refiere al que está en la linea 36, numero al que viene por valor
+    }
+    getNumero(){
+        return this.number
+    }
+//private solamente se puede manejar desde la clase, public se puede acceder desde afuera
+   public sortear():string{
+    return 'Para ' + `${this.number}`
+
+   }
+}

@@ -25,3 +25,19 @@ function jugar(equipo1 = 11, equipo2 = 11) {
 //con any se puede reasignar el tipo de dato de la variable, lo mismo creo con unknow; ts config se puede configurar para que 
 // no infiera que es any es decir que lance error si ponemos any
 // con any podemos saltear las validaciones de tipado de ts
+class Sorteo {
+    //encapsulamiento: no se puede tocar el number, solo con gettes y setters se puede mostrar y modificar, a través de la instancia que corresponda, primero se instancia para modificar
+    constructor(nombre) {
+        this.nombre = nombre;
+    }
+    setNumero(numero) {
+        this.number = numero; //this refiere al que está en la linea 36, numero al que viene por valor
+    }
+    getNumero() {
+        return this.number;
+    }
+    //private solamente se puede manejar desde la clase, public se puede acceder desde afuera
+    sortear() {
+        return 'Para ' + `${this.number}`;
+    }
+}

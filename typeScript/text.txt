@@ -351,3 +351,8 @@ const pelicula1 = new Pelicula("barbie, ["barbie","ken"], ["ryan", "carlos"])
 console.log(pelicula1)
 
 la clase es como una especie de modelo que se instancias en nuevos objetos
+
+
+// ENCAPSULAMIENTO
+
+class Sorteo <T>
