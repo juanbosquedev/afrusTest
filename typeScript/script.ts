@@ -1,5 +1,11 @@
 console.log(" hola Juan, si");
-
+// en ts cuando declaramos no es obligatorio inicializar, si inicializamos y no declaramos tipo de dato, asume que es del tipo de dato
+//que tiene el valor, de lo contrario si declaramos no asingamos tipo de dato y no inicializamos se puede trabajar con distintos tipos de datos ej:
+let noInicializo;
+noInicializo=10;
+noInicializo="JUan";
+let inicializo = 20; //ts infiere que es tipo number
+// let inicializo= "Juan"; da error por que infiere que es tipo number
 let estudiasteJS: boolean = true; //boolean no va a aparecer en la compilación de js por que no soporta los tipados pero ts si
 
 estudiasteJS
@@ -17,6 +23,21 @@ enum Color{Red, Green, Blue};
 let c: Color = Color.Green;//valor por defecto númerico va a ser un 1, si a Red=5; pasaría a ser 6
 // any type, sirve si el tipo de dato es dinámico o no sabemos que tipo de dato vamos a utilizar
 // a su vez permite reescribir el tipo de dato por ej let x:any=22; x="Juan"; x= true, va a funcionar todo
+
+//unknowkn otro type de ts similar a any, el tema es que las propiedades de unknown, no se pueden acceder ni construirlas(constructor)
+//hay que usar assert para que tome las propiedades en el case de un objeto
+
+let myvariable:any=10;
+myvariable();
+myvariable.toUpperCase();
+
+let myvariables:unknown=10;
+myvariable()
+(myvariables as string).toUpperCase()// le assignamos que debe ser tratado como un string; para que funcione con unknowkn
+
+
+
+
 function jugar(equipo1: number = 11, equipo2: number = 11): void {
   if (equipo1 > equipo2)
     (Motivo = "por que juega Messi"), console.log(`gana equipo1 ${Motivo}`);
