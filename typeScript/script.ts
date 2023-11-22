@@ -9,7 +9,14 @@ let equipo1: number = 11;
 let equipo2: number = 11;
 let Messi: number = 1;
 let Motivo: string = "";
-
+let ArrayNum: number[]=[1,2,3]
+let ArrayNumb: Array<number>=[1,2,3]//otra forma de asignar tipo de dato a un array
+let ArrayMix:[string, number]= ["Juan", 38] // sedebe respetar el orden y la cantidad de datos, por ejmplo no puedo pasar otro dato numérico
+//enum sirve para definir nuestro propio tipo de datos, sirve para guardar datos y luego utilizarlo como si fuese un tipo de dato
+enum Color{Red, Green, Blue};
+let c: Color = Color.Green;//valor por defecto númerico va a ser un 1, si a Red=5; pasaría a ser 6
+// any type, sirve si el tipo de dato es dinámico o no sabemos que tipo de dato vamos a utilizar
+// a su vez permite reescribir el tipo de dato por ej let x:any=22; x="Juan"; x= true, va a funcionar todo
 function jugar(equipo1: number = 11, equipo2: number = 11): void {
   if (equipo1 > equipo2)
     (Motivo = "por que juega Messi"), console.log(`gana equipo1 ${Motivo}`);
