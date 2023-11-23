@@ -5,16 +5,18 @@
       name: "HP Pavilion Notebook",
       description: "HP laptop",
       category: "laptop",
+      imageURL: "",
     },
     {
       id: 2,
       name: "Mouse Razer",
       description: "Gaming Mouse",
       category: "peripherials",
+      imageURL: "",
     },
   ];
   let product = {
-    id: "",
+    id:"",
     name: "",
     description: "",
     categroy: "",
@@ -23,7 +25,17 @@
 
   const onSubmitHandler = (e) => {
     e.preventDefault();
-    console.log(product);
+  
+  let newProduct={
+    id: products.length+1,
+    name: product.name,
+    description: product.description,
+    categroy: product.categroy,
+    imageURL: product.imageURL,
+  }
+
+   products= products.concat(newProduct)
+   console.log(products)
   };
 </script>
 
@@ -34,7 +46,7 @@
         <div class="card mt-2 pb-2">
           <div class="row ">
             <div class="col-md-4">
-              <img src="../public/images.png" alt="" />
+              <img src="../public/images.png" alt="" class="img-fluid p-2"/>
             </div>
             <div class="col-md-8 ">
                 <div class="card-body"></div>
