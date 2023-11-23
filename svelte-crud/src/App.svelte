@@ -46,6 +46,10 @@
 
       products = products.filter((p) => p.id !== id);
     };
+    const productEdit = (productEdit:Product) => {
+
+product = productEdit;
+};
   
     const onSubmitHandler = (e: Event) => {
       e.preventDefault();
@@ -85,7 +89,7 @@
                   </h5>
                   <p>{product.description}</p>
                   <button class="btn btn-danger" on:click={() => productDelete(product.id)}>Delete</button>
-                  <button class="btn btn-secondary">Edit</button>
+                  <button class="btn btn-secondary" on:click={() => productEdit(product)}>Edit</button>
                 </div>
               </div>
             </div>
