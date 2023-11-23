@@ -8,7 +8,7 @@
     },
     {
       id: 2,
-      name: "Mouse Raz er",
+      name: "Mouse Razer",
       description: "Gaming Mouse",
       category: "peripherials",
     },
@@ -31,15 +31,20 @@
   <div class="row">
     <div class="col-md-6">
       {#each products as product}
-        <div class="card mt-2" >
-          <div class="row">
+        <div class="card mt-2 pb-2">
+          <div class="row ">
             <div class="col-md-4">
-              <img src="" alt="" />
+              <img src="../public/images.png" alt="" />
             </div>
-            <div class="col-md-8">
+            <div class="col-md-8 ">
+                <div class="card-body"></div>
+              <h5>
                 <strong>{product.name}</strong>
-              <h5></h5>
+                <span><small>{product.category}</small></span>
+              </h5>
               <p>{product.description}</p>
+             <butto class="btn btn-danger">Delete</butto>
+             <butto class="btn btn-secondary">Edit</butto>
             </div>
           </div>
         </div>
