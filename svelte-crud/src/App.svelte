@@ -84,6 +84,7 @@
   <div class="container p-4">
     <div class="row">
       <div class="col-md-6">
+        
         {#each products as product}
           <div class="card mt-2 pb-2">
             <div class="row">
@@ -180,5 +181,5 @@
 </main>
 
 <style>
-  /* Estilos aquí */
+
 </style>
