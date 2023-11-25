@@ -49,8 +49,9 @@
     al tamaño del texto agrandandosé o achicandosé según el caso*/
    /* gap:1rem;
    /* column-gap: 1rem; aplica espacio solamente entre columnas */
-   /* justify-items: ; para justificar cada elemento contenido en el grid, start/center/end (se limita como elemento en linea, al ancho de su texto; al inicio, centro o fin
-    o stretch(ocupa el ancho de su espacio asignado) */
+   /* justify-items: ; para justificar cada elemento contenido en las columnas grid, start/center/end (se limita como elemento en linea, al ancho de su texto; al inicio, centro o fin
+    o stretch(ocupa el ancho de su espacio asignado)
+    aling-items: funciona de manera similar a justify nada más que aplicado a las filas con start se irá hacia arriba/center/end etc*/
    /* row-gap: 1rem; aplica espacio solamente entre filas  */
    /* grid-auto-rows: 50px; controla la altura de filas no especificadas, asignandole una altura 
    grid-template-rows: 100px, 200px; le asignará a las dos primeras filas estas alturas, mientras que para las restantes que se vallan creando se aplicara grid-auto-row*/
@@ -61,6 +62,10 @@
 
     background: rgb(26, 168, 61);
     padding: 1rem;
+}
+.menu1{
+    /* align-self: ; lo que aplique de alineado o con justify-self se aplica solamente el elemento seleccionado, funciona dentro del elemento en particular
+    mientras que el anterior justify/aling-items funciona en el contendor del item*/
 }
 .grid div:hover{
     outline:1px solid #f1c40f;
