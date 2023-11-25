@@ -40,18 +40,25 @@
 .grid{
     display: grid;
     background-color: aqua;
-    
+    grid-template-columns:repeat(4, 1fr); /* puedes poner 200px 200px 200px 200px lo cual es una medida fija, o sino algo flexible como 
+    1fr 1fr 1fr 1fr; para evitar esta repetición existe repeat(cantidad de veces a repetir, y tamaño ej: repeat(4, 1fr) */
+     grid-template-rows: minmax(100px,auto);/* le indicamos un valor minimo de alto que deben tener las filas, dejando el máximo en automático */
    /* grid-template-columns: 50% 50%; con este especifico el ancho de las columnas, por lo que agregar una nueva se irá para abajo
     creando u ocupando una nueva fila, por que los elementos en grid corren de izq a der y de arriba a abajo*/
     /*grid-template-rows: auto 200px 400px;  indicamos el alto de cada fila, con auto se ajusta al elemento que contiene, es decir si es un texto y justo es más largo se ajusta
     al tamaño del texto agrandandosé o achicandosé según el caso*/
    /* gap:1rem;
    /* column-gap: 1rem; aplica espacio solamente entre columnas */
+   /* justify-items: ; para justificar cada elemento contenido en el grid, start/center/end (se limita como elemento en linea, al ancho de su texto; al inicio, centro o fin
+    o stretch(ocupa el ancho de su espacio asignado) */
    /* row-gap: 1rem; aplica espacio solamente entre filas  */
- 
+   /* grid-auto-rows: 50px; controla la altura de filas no especificadas, asignandole una altura 
+   grid-template-rows: 100px, 200px; le asignará a las dos primeras filas estas alturas, mientras que para las restantes que se vallan creando se aplicara grid-auto-row*/
 }
+/* div*6{$} div*6 da 6 divs; {para escribir texto adentro de cada div}; $número incremental, que se irá incrementando*/ 
 /* grid es como una rejilla invisible en el layout, se aplica a todos los elementos */
-.grid div {
+.grid > div { /* > hace que se aplique a los elementos que estan adentro del selector evitando sobreescribir otros que eestén por fuera */
+
     background: rgb(26, 168, 61);
     padding: 1rem;
 }
