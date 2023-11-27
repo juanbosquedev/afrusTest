@@ -6,7 +6,7 @@ function App() {
 
   return (
     <>
-     <Greeting name={}></Greeting>
+     <Greeting name="Juan" years={38}></Greeting>
     </>
   )
 }
