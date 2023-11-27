@@ -111,3 +111,18 @@ grid-area: footer;
 .grid div:hover {
   outline: 1px solid #f1c40f;
 }
+
+.content{
+    display: grid;
+    grid-template-rows: 0fr;
+    transition: .3s grid-template-rows ease;
+    background-color: aqua;
+}
+article:hover .content{
+    grid-template-rows: 1fr;
+    background-color: rgb(68, 0, 255);
+
+}
+.content > div{
+    overflow: hidden;
+}
