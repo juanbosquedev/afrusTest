@@ -2,18 +2,31 @@
 import './App.css'
 import { Greeting } from './components/Greeting';
 import { Person } from './components/Person';
+import { PersonList } from './components/PersonList';
 
 
 function App() {
 
-const Persons={
-  name:"Juan",
-  lastname:"Bosque"
+const PersonName={
+  first:"Juan",
+  last:"Bosque"
 }
+
+const nameList=[{
+  first:"whine",
+  last:"Rooney"
+}, {
+  first:"Mel",
+  last:"Gibson"
+},{
+  first:"Juan",
+  last:"Macri"
+}]
   return (
     <>
-    <Person name={Persons.name} lastname={Persons.lastname}></Person>
+    <Person name={PersonName}></Person>
      <Greeting name="Juan" years={38} isLogged={false}></Greeting>
+     <PersonList list={nameList}></PersonList>
     </>
   )
 }

@@ -1,10 +1,13 @@
-interface PersonProps {
-    name:string,
-    lastname:string
+type PersonProps ={
+    name:{
+
+        first:string
+        last:string
+    }
 }
 
 export const Person = (props:PersonProps) => {
   return (
-    <div>Person{props.name} {props.lastname}</div>
+    <div>Person{props.name.first} {props.name.last}</div>
   )
 }
