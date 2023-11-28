@@ -4,7 +4,7 @@ import { Greeting } from "./components/Greeting";
 import { Heading } from "./components/Heading";
 import { Input } from "./components/InputEvent";
 import { Oscar } from "./components/Oscar";
-import { Person } from "./components/Person";
+import { Person } from "./components/Person/Person";
 import { PersonList } from "./components/PersonList";
 import { Status } from "./components/Status";
 import { Container } from "./components/container";
