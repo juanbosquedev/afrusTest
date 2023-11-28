@@ -2,10 +2,12 @@ import "./App.css";
 import { Button } from "./components/Button";
 import { Greeting } from "./components/Greeting";
 import { Heading } from "./components/Heading";
+import { Input } from "./components/InputEvent";
 import { Oscar } from "./components/Oscar";
 import { Person } from "./components/Person";
 import { PersonList } from "./components/PersonList";
 import { Status } from "./components/Status";
+// import {InputEvent} from './components/'
 
 function App() {
   const PersonName = {
@@ -38,6 +40,7 @@ function App() {
       </Oscar>
     <Button handleClick={(event, id)=>console.log('Button clicked',event, id)}/> {/*podemos utilizar el parámetro del evento en el cuerpo de la funcion
     */} 
+    <Input value='' handleChange={(event)=>console.log(event)}/>
     </>
   );
 }
