@@ -12,6 +12,8 @@ import { Box } from "./components/context/Box";
 import { ThemeContextProvider } from "./components/context/ThemeContext";
 import { User } from "./components/context/User";
 import { UserContextProvider } from "./components/context/UserContext";
+import { Private } from "./components/auth/Private";
+import { Profile } from "./components/auth/Profile";
 // import {InputEvent} from './components/'
 
 function App() {
@@ -57,6 +59,7 @@ function App() {
       <UserContextProvider>
         <User></User>
       </UserContextProvider>
+      <Private isLoggedIn={true} Component={Profile}></Private>
     </>
   );
 }
