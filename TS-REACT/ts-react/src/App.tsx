@@ -10,7 +10,8 @@ import { Status } from "./components/Status";
 import { Container } from "./components/Container";
 import { Box } from "./components/context/Box";
 import { ThemeContextProvider } from "./components/context/ThemeContext";
-
+import { User } from "./components/context/User";
+import { UserContextProvider } from "./components/context/UserContext";
 // import {InputEvent} from './components/'
 
 function App() {
@@ -53,6 +54,9 @@ function App() {
       <ThemeContextProvider>
         <Box />
       </ThemeContextProvider>
+      <UserContextProvider>
+        <User></User>
+      </UserContextProvider>
     </>
   );
 }
