@@ -15,6 +15,7 @@ import { UserContextProvider } from "./components/context/UserContext";
 import { Private } from "./components/auth/Private";
 import { Profile } from "./components/auth/Profile";
 import { List } from "./components/generic/List";
+import { RandomNumber } from "./components/restriccions/RandomNumber";
 // import {InputEvent} from './components/'
 
 function App() {
@@ -63,7 +64,7 @@ function App() {
       <Private isLoggedIn={true} Component={Profile}></Private>
    <List items={['Batman','Superman','Wonder Woman']} onClick={(item)=>console.log(item)}/>
    <List items={[1,2,3]} onClick={(item)=>console.log(item)}/>
-    
+    <RandomNumber value={10} isPositive/>
     </>
   );
 }
