@@ -14,6 +14,7 @@ import { User } from "./components/context/User";
 import { UserContextProvider } from "./components/context/UserContext";
 import { Private } from "./components/auth/Private";
 import { Profile } from "./components/auth/Profile";
+import { List } from "./components/generic/List";
 // import {InputEvent} from './components/'
 
 function App() {
@@ -60,6 +61,9 @@ function App() {
         <User></User>
       </UserContextProvider>
       <Private isLoggedIn={true} Component={Profile}></Private>
+   <List items={['Batman','Superman','Wonder Woman']} onClick={(item)=>console.log(item)}/>
+   <List items={[1,2,3]} onClick={(item)=>console.log(item)}/>
+    
     </>
   );
 }
