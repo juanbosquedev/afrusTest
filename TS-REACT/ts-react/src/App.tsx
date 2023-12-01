@@ -17,6 +17,7 @@ import { Profile } from "./components/auth/Profile";
 import { List } from "./components/generic/List";
 import { RandomNumber } from "./components/restriccions/RandomNumber";
 import { Toast } from "./components/templateLiterals.tsx/Toast";
+import { CustomButton } from "./components/Button";
 // import {InputEvent} from './components/'
 
 function App() {
@@ -67,6 +68,8 @@ function App() {
    <List items={[1,2,3]} onClick={(item)=>console.log(item)}/>
     <RandomNumber value={10} isPositive/>
     <Toast position='center - bottom'/>
+
+    <CustomButton variant="primary"></CustomButton>
     </>
   );
 }
