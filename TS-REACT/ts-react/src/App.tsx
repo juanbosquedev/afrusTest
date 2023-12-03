@@ -18,6 +18,7 @@ import { List } from "./components/generic/List";
 import { RandomNumber } from "./components/restriccions/RandomNumber";
 import { Toast } from "./components/templateLiterals.tsx/Toast";
 import { CustomButton } from "./components/Button";
+import { Text } from "./components/polymorphic/Text";
 // import {InputEvent} from './components/'
 
 function App() {
@@ -70,8 +71,14 @@ function App() {
     <Toast position='center - bottom'/>
 
     <CustomButton variant="primary"></CustomButton>
+    <Text as='h1' size="lg">heading</Text>
+    <Text as='p' size="md">paragraph</Text>
+    <Text as='label' size="sm" color="secondary">label</Text>
+   
     </>
   );
 }
 
 export default App;
+//estudiaro no me quedo claro, pasar un componente como prop, generic props
+//restricning props, template literals, and exclude utility types, Omit, extract props, and polimorphic component
