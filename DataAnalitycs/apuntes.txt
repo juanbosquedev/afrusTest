@@ -1,0 +1,13 @@
+Data Analitycs recolección de datos
+
+1 - Recoleccion de Datos
+
+2- Limpieza y preparación de datos
+
+3-Exploración de Datos
+
+4-Creación del modelo
+
+5- Evaluación del modelo y deployment
+
+Pandas
