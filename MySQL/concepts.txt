@@ -1,0 +1,31 @@
+Lenguaje de consultas estructuradas
+
+-Base de datos relacionales
+
+-Es un lenguaje estandarizado, todos los gestores de base de datos tienen que manejar este estándar(SQLSERVER, MARÍA DB MYSQL, ORACLE, POSTGRESSQL)
+
+Antes se utilizaban las bases de datos basadas en archivos, un texto plano y separabamos los valores a relacionar(con cómas, signos etc)
+era fácil guardar los datos, pero díficil obtenerlos de forma ordenada, y sin complicaciones
+
+Edgar Code, crea el algebra relacional, luego se crea la base de datos relacional
+
+
+Lo que soluciona el algebra relacional es poder guardar, manipualr y obtener de forma apropiada la información
+
+*ENTIDAD COSA O CONCEPTO DE LA VIDA REAL
+
+Se puede representar a través de una tabla, 
+almacenamos la información de la entiedad en la base de datos
+
+Por ej, entiedades de una tienda en linea, clientes, productos, órdenes de compra, proveedores
+
+la forma de representar las entiedades y sus relaciones es a través de la Notación de chen
+
+por ej entidad casa con notación chen, se representa con un cuadrado
+
+osea un cuadrado representa una entidad, la casa tiene atributos por ej(propietario, dirección, ubicación, ventanas, antiguedad etc)
+los atributos se representan por un óvalo
+
+atributos se calsifician en simples y compuestos, los simples tienen dtos únicos, por ej el precio; el ambiente es un atributo compuestos
+por que tiene un tamaño, tipo de ambiente, se representan por lineas y ovalos, desde el ovalo principal(ambiente), se entiende que el ovalo ambiente
+es compuesto si tiene una linea y un ovalo tamaño, y otra linea y ovalo tipo por ej
