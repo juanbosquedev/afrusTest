@@ -3,10 +3,10 @@ import ReactDOM from "react-dom/client";
 // import "./index.css";
 // import { AppRoute } from "./AppRoute/AppRoute";
 import { BrowserRouter } from "react-router-dom";
-import { Ecommerce } from "./Ecommerce/Ecommerce";
+// import { Ecommerce } from "./Ecommerce/Ecommerce";
 
 // import { MovieApp } from "./MovieApp/MovieApp";
-// import {WheatherApp} from './wheatherApp/WheatherApp'
+import {WheatherApp} from './wheatherApp/WheatherApp'
 // import './wheatherApp/styles.module.css'
 // import {Component }from "./formMain";
 // import { Fetch } from "./fetching/fetchMain";
@@ -21,9 +21,9 @@ import { Ecommerce } from "./Ecommerce/Ecommerce";
 ReactDOM.createRoot(document.getElementById("root")).render(
   <React.StrictMode>
     <BrowserRouter> 
-    <Ecommerce/>
+    {/* <Ecommerce/> */}
     {/* <MovieApp/> */}
-    {/* <WheatherApp/> */}
+    <WheatherApp/>
        {/* <AppRoute />  */}
            {/*  provee información que la familia de componentes necesita que tenga hacia abajo */}
 
