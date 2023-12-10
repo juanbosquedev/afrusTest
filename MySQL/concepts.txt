@@ -29,3 +29,66 @@ los atributos se representan por un óvalo
 atributos se calsifician en simples y compuestos, los simples tienen dtos únicos, por ej el precio; el ambiente es un atributo compuestos
 por que tiene un tamaño, tipo de ambiente, se representan por lineas y ovalos, desde el ovalo principal(ambiente), se entiende que el ovalo ambiente
 es compuesto si tiene una linea y un ovalo tamaño, y otra linea y ovalo tipo por ej
+
+Los atributos multi valor son los que tienen más de un valor, por ej ambiente, puerta o ventana, por que existen más de uno, se representan por un doble óvalo
+
+Atributos derivados, lo obtenemos de otro atributo, por ej antiguedad, calculamos desde que se construyo la casa y la fecha actual, obtenemos el atributo desde otro atributo
+Se representa con un ovalo con linea punteadas
+
+Key forma única de identificar algo, por ej id, que las hace única e irrepetible
+se representa con un ovalo(por que es un atributo), pero con la palabra al medio subrayada
+
+Hay más formas para representar con la notación de chen
+
+Se trata de reducir la mayor cantidad de información posible en los campos correctos, de manera precisa concisa y sin ser redundantes o datos no necesarios
+
+BASE DE DATOS: CONJUNTO DE DATOS ORGANIZAODS, estructurada que podemos manipular, datos a los que se le puede dar sentido
+
+Registros son las filas, campos las columnas
+
+El campo es el encabezado de la columna, los contenidos de la columna son los valores del campo; el registro abarca toda la fila
+
+tipos de datos
+INTIGER ENTERO
+TEXT texto
+BLOB PARA GUARDAR IMAGENES archivos; ALMACENA DATOS BINARIOS
+REAL MATEMATICA; ES COMO FLOAT(VALORES CON COMA, PORCENTAJES) ALMACENA 8 BITES Y ES RÁPIDO
+NUMERIC MATEMATICA PRECISA, NPUMEROS MUY ALTOS COMO PI, VALORES NUMERICOS MUY GRANDES, ES MÁS LENTO PERO NO TIENE LIMITE PARA GUARDAR
+
+SQLITE ES DE TIPO DINAMICO, EL VALOR QUE GUARDAMOS VA A SER EL TIPO DE DATO QUE TOME EL CAMPO
+
+DEFAULT ES POR SI QUERÉMOS ASIGNAR UN VALOR POR DEFECTO
+
+AI AUTOINCREMENT
+NN NOT NULL
+PK PRIMARY Key
+U UNDEFINED
+
+comandos 
+create DATABASE "juan"
+CREATE TABLE "personas" (
+	"name"	TEXT,
+	"lastname"	INTEGER,
+	"years"	INTEGER
+);
+
+para cargar la tabla
+INSERT INTO personas(name,lastname, years)
+VALUES('juan', 'bosque', 38),
+       ('Valentina', 'bosque', 18)
+
+SELECT * FROM personas
+SELECT name, lastname FROM personas
+
+
+SELECT name, lastname FROM personas
+WHERE name = "juan"
+
+En la base de datos cada interacción es una consulta por que le preguntamos mediante los comandos si lo puede hacer, por eso es query
+Luego la db responde que si o no pudo ejecutar la consulta
+
+Cada consulta devuelve una tabla nueva
+
+Las tablas almacenan información sobre una entidad específica
+
+IDENTIFICADORES
