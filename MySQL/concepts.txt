@@ -91,4 +91,9 @@ Cada consulta devuelve una tabla nueva
 
 Las tablas almacenan información sobre una entidad específica
 
+DELETE * FROM personas
+
 IDENTIFICADORES
+
+Primary key identificador propio de la tabla
+Foreign Key identificadores primarios de otras tablas
